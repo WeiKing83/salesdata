@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Angebotsmonitor 2026 · Micropower Group</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy:       #0d1b2e;
+  --navy-mid:   #122240;
+  --navy-light: #1a3156;
+  --navy-card:  #152038;
+  --orange:     #e85a0e;
+  --orange-lt:  #f47235;
+  --orange-dim: rgba(232,90,14,0.15);
+  --green:      #22c55e;
+  --green-dim:  rgba(34,197,94,0.13);
+  --red:        #ef4444;
+  --red-dim:    rgba(239,68,68,0.13);
+  --amber:      #f59e0b;
+  --amber-dim:  rgba(245,158,11,0.13);
+  --text:       #f0f4fa;
+  --text-mid:   #8fa3c0;
+  --text-dim:   #3d5470;
+  --border:     rgba(255,255,255,0.07);
+  --border-mid: rgba(255,255,255,0.12);
+}
+
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--navy);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  font-size: 14px;
+}
+
+/* ——— TOP BAR ——— */
+.topbar {
+  background: var(--navy-mid);
+  border-bottom: 1px solid var(--border);
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  background: var(--orange);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 15px;
+  color: #fff;
+  letter-spacing: -0.5px;
+  flex-shrink: 0;
+}
+
+.logo-text {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+
+.logo-sub {
+  font-size: 11px;
+  color: var(--text-mid);
+  font-weight: 400;
+  margin-top: 1px;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.status-pill {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid;
+  cursor: default;
+}
+
+.status-connected { border-color: rgba(34,197,94,0.35); background: var(--green-dim); color: var(--green); }
+.status-disconnected { border-color: rgba(239,68,68,0.35); background: var(--red-dim); color: var(--red); }
+.status-dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; animation: pulse 2s infinite; }
+
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
+
+.btn-icon {
+  width: 34px; height: 34px;
+  border: 1px solid var(--border-mid);
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-mid);
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.15s;
+  font-size: 16px;
+}
+.btn-icon:hover { border-color: var(--orange); color: var(--orange); }
+
+/* ——— ORANGE ACCENT LINE ——— */
+.accent-line {
+  height: 3px;
+  background: linear-gradient(90deg, var(--orange) 0%, var(--orange-lt) 40%, transparent 100%);
+}
+
+/* ——— PAGE ——— */
+.page { max-width: 1400px; margin: 0 auto; padding: 28px 24px 60px; }
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin-bottom: 4px;
+}
+
+.page-title span { color: var(--orange); }
+
+.page-sub {
+  font-size: 12px;
+  color: var(--text-mid);
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* ——— ALERT BANNER ——— */
+.alert-wrap { margin-bottom: 20px; display: flex; flex-direction: column; gap: 8px; }
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border-left: 4px solid;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown { from{opacity:0;transform:translateY(-8px)} to{opacity:1;transform:translateY(0)} }
+
+.alert-danger  { background: var(--red-dim);   border-color: var(--red);   }
+.alert-warning { background: var(--amber-dim);  border-color: var(--amber); }
+.alert-success { background: var(--green-dim);  border-color: var(--green); }
+
+.alert-icon { font-size: 18px; flex-shrink: 0; }
+.alert strong { display: block; font-size: 13px; margin-bottom: 2px; }
+.alert p { font-size: 12px; color: var(--text-mid); line-height: 1.5; font-family: 'JetBrains Mono', monospace; }
+
+/* ——— KPI GRID ——— */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+@media(max-width:1200px){ .kpi-grid{ grid-template-columns: repeat(3,1fr) } }
+@media(max-width:700px){ .kpi-grid{ grid-template-columns: repeat(2,1fr) } }
+
+.kpi {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 18px 20px;
+  position: relative;
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.kpi:hover { border-color: var(--border-mid); transform: translateY(-1px); }
+
+.kpi::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--kpi-color, var(--orange));
+  border-radius: 12px 12px 0 0;
+}
+
+.kpi-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.kpi-value {
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.8px;
+  line-height: 1;
+  color: var(--kpi-color, var(--orange));
+  margin-bottom: 6px;
+}
+
+.kpi-meta { font-size: 11px; color: var(--text-mid); }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 700;
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 6px;
+}
+.badge-green { background: var(--green-dim); color: var(--green); }
+.badge-red   { background: var(--red-dim);   color: var(--red);   }
+.badge-amber { background: var(--amber-dim);  color: var(--amber); }
+.badge-blue  { background: rgba(59,130,246,0.12); color: #60a5fa; }
+.badge-orange{ background: var(--orange-dim); color: var(--orange); }
+
+/* ——— MAIN LAYOUT ——— */
+.main-layout {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 16px;
+}
+@media(max-width:1100px){ .main-layout{ grid-template-columns:1fr } }
+
+/* ——— CARD ——— */
+.card {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.card-header {
+  padding: 18px 22px 14px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  font-weight: 700;
+  color: var(--text-mid);
+}
+
+.card-badge {
+  font-size: 10px;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--orange);
+}
+
+.card-body { padding: 20px 22px; }
+
+/* ——— CHART ——— */
+.chart-svg {
+  width: 100%;
+  height: 200px;
+  overflow: visible;
+  display: block;
+}
+
+/* ——— DATA ENTRY ——— */
+.entry-section {
+  border-top: 1px solid var(--border);
+  padding: 18px 22px;
+}
+
+.entry-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.entry-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 1fr auto;
+  gap: 10px;
+  align-items: end;
+}
+@media(max-width:700px){ .entry-row{ grid-template-columns: 1fr 1fr; } }
+
+.field label {
+  display: block;
+  font-size: 10px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  background: var(--navy-light);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px;
+  padding: 9px 12px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.field input::placeholder { color: var(--text-dim); }
+.field input:focus, .field select:focus { border-color: var(--orange); }
+.field select option { background: var(--navy-mid); }
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: #fff;
+}
+.btn-primary:hover { background: var(--orange-lt); transform: translateY(-1px); }
+.btn-primary:disabled { opacity: 0.5; cursor: wait; }
+
+.btn-ghost {
+  background: transparent;
+  border: 1px solid var(--border-mid);
+  color: var(--text-mid);
+  font-size: 12px;
+  padding: 7px 14px;
+}
+.btn-ghost:hover { border-color: var(--red); color: var(--red); }
+
+.entry-hint {
+  font-size: 11px;
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 8px;
+  min-height: 16px;
+}
+
+/* ——— TABLE ——— */
+.table-wrap { overflow-x: auto; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead th {
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+}
+
+tbody td {
+  padding: 13px 16px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 13px;
+  color: var(--text-mid);
+  font-family: 'JetBrains Mono', monospace;
+}
+tbody tr:last-child td { border-bottom: none; }
+tbody tr:hover td { background: rgba(255,255,255,0.02); }
+
+.td-month { color: var(--text); font-weight: 600; font-family: 'Inter', sans-serif; }
+
+.tag {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+}
+.tag-green { background: var(--green-dim); color: var(--green); }
+.tag-amber { background: var(--amber-dim);  color: var(--amber); }
+.tag-red   { background: var(--red-dim);   color: var(--red);   }
+
+.empty-row { text-align: center; padding: 36px !important; color: var(--text-dim); font-family: 'Inter', sans-serif; font-size: 13px; }
+
+/* ——— RIGHT PANEL ——— */
+.right-stack { display: flex; flex-direction: column; gap: 14px; }
+
+/* ——— GAUGE ——— */
+.gauge-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 4px;
+}
+
+/* ——— PROGRESS BARS ——— */
+.prog-item { margin-bottom: 14px; }
+.prog-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.prog-label { font-size: 11px; color: var(--text-mid); }
+.prog-val { font-size: 12px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+.prog-bar { height: 6px; background: var(--navy-light); border-radius: 999px; overflow: hidden; }
+.prog-fill { height: 100%; border-radius: 999px; transition: width 0.8s ease; }
+
+/* ——— FORECAST ——— */
+.fc-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; }
+
+.fc-card {
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.fc-label { font-size: 9px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); font-weight: 700; margin-bottom: 5px; }
+.fc-val { font-size: 18px; font-weight: 800; line-height: 1; margin-bottom: 4px; }
+.fc-note { font-size: 9px; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); }
+
+/* ——— AI SECTION ——— */
+.ai-btn {
+  width: 100%;
+  background: linear-gradient(135deg, var(--navy-light), rgba(232,90,14,0.08));
+  border: 1px solid rgba(232,90,14,0.3);
+  color: var(--orange);
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.2s;
+  margin-bottom: 14px;
+}
+.ai-btn:hover { background: linear-gradient(135deg, var(--navy-light), rgba(232,90,14,0.16)); }
+.ai-btn:disabled { opacity: 0.5; cursor: wait; }
+
+.ai-output {
+  background: var(--navy-light);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 12px;
+  line-height: 1.7;
+  color: var(--text-mid);
+  display: none;
+  white-space: pre-wrap;
+  max-height: 300px;
+  overflow-y: auto;
+}
+.ai-output.show { display: block; }
+.ai-cursor::after { content: '▋'; animation: blink 0.7s infinite; color: var(--orange); }
+@keyframes blink { 50%{opacity:0} }
+
+/* ——— GITHUB SETUP MODAL ——— */
+.modal-backdrop {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,0.75);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+.modal {
+  background: var(--navy-mid);
+  border: 1px solid var(--border-mid);
+  border-radius: 16px;
+  padding: 36px;
+  max-width: 480px;
+  width: 90%;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.5);
+}
+
+.modal-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.modal h2 {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  letter-spacing: -0.3px;
+}
+
+.modal h2 span { color: var(--orange); }
+
+.modal p {
+  font-size: 12px;
+  color: var(--text-mid);
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.modal .field { margin-bottom: 14px; }
+
+.modal input {
+  width: 100%;
+  background: var(--navy-light);
+  border: 1px solid var(--border-mid);
+  border-radius: 8px;
+  padding: 10px 14px;
+  color: var(--text);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+.modal input:focus { border-color: var(--orange); }
+
+.modal-hint {
+  font-size: 11px;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.modal-error {
+  background: var(--red-dim);
+  border: 1px solid rgba(239,68,68,0.3);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 12px;
+  color: var(--red);
+  font-family: 'JetBrains Mono', monospace;
+  margin-top: 12px;
+  display: none;
+}
+
+.divider { height: 1px; background: var(--border); margin: 20px 0; }
+
+/* ——— LOADING ——— */
+.spinner {
+  width: 20px; height: 20px;
+  border: 2px solid var(--border-mid);
+  border-top-color: var(--orange);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+  display: inline-block;
+}
+@keyframes spin { to{ transform: rotate(360deg) } }
+
+/* ——— CSV UPLOAD ——— */
+.csv-drop {
+  border: 2px dashed var(--border-mid);
+  border-radius: 10px;
+  padding: 28px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+  background: var(--navy-light);
+}
+.csv-drop:hover, .csv-drop.drag-over {
+  border-color: var(--orange);
+  background: rgba(232,90,14,0.06);
+}
+.csv-drop input[type=file] {
+  position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%;
+}
+.csv-icon { font-size: 28px; margin-bottom: 8px; }
+.csv-drop-title { font-size: 14px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+.csv-drop-sub { font-size: 12px; color: var(--text-mid); font-family: 'JetBrains Mono', monospace; }
+.csv-drop-sub span { color: var(--orange); }
+
+.csv-preview {
+  background: var(--navy-light);
+  border: 1px solid var(--border-mid);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin-top: 14px;
+  display: none;
+}
+.csv-preview.show { display: block; }
+.csv-preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.csv-preview-title { font-size: 12px; font-weight: 700; color: var(--text); }
+.csv-preview-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.csv-stat {
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+.csv-stat-val { font-size: 18px; font-weight: 800; line-height: 1; margin-bottom: 3px; }
+.csv-stat-label { font-size: 10px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.07em; font-weight: 600; }
+
+.csv-months-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 14px; }
+.csv-month-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--navy-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 13px;
+}
+.csv-month-name { font-weight: 600; color: var(--text); min-width: 90px; }
+.csv-month-stats { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-mid); display: flex; gap: 16px; }
+.csv-month-quote { font-weight: 700; font-family: 'JetBrains Mono', monospace; font-size: 13px; }
+
+/* ——— ORANGE HORIZONTAL RULE ——— */
+.o-divider {
+  height: 1px;
+  background: linear-gradient(90deg, var(--orange) 0%, transparent 60%);
+  margin: 20px 0;
+}
+
+/* syncing indicator */
+.sync-label {
+  font-size: 10px;
+  color: var(--text-dim);
+  font-family: 'JetBrains Mono', monospace;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════ GITHUB SETUP MODAL -->
+<div class="modal-backdrop" id="setupModal">
+  <div class="modal">
+    <div class="modal-logo">
+      <div class="logo-mark">M</div>
+      <div>
+        <div class="logo-text">Micropower Group</div>
+        <div class="logo-sub">Angebotsmonitor 2026 · Ersteinrichtung</div>
+      </div>
+    </div>
+    <h2>GitHub <span>Datenbankverbindung</span></h2>
+    <p>Damit deine Daten geräteübergreifend gespeichert und synchronisiert werden, verbinde den Monitor mit einem GitHub Repository.</p>
+
+    <div class="field">
+      <label>GitHub Personal Access Token</label>
+      <input type="password" id="ghToken" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+      <div class="modal-hint">➜ github.com → Settings → Developer settings → Personal access tokens → Tokens (classic)<br>Benötigte Berechtigung: <strong>repo</strong> (vollständig)</div>
+    </div>
+
+    <div class="field">
+      <label>GitHub Benutzername</label>
+      <input type="text" id="ghOwner" placeholder="dein-github-username">
+    </div>
+
+    <div class="field">
+      <label>Repository Name</label>
+      <input type="text" id="ghRepo" placeholder="micropower-sales-data">
+      <div class="modal-hint">Repository muss existieren (kann privat sein). Die Datei wird automatisch angelegt.</div>
+    </div>
+
+    <div id="setupError" class="modal-error"></div>
+
+    <div class="modal-footer">
+      <button class="btn btn-primary" id="connectBtn" onclick="connectGitHub()">
+        <span>Verbinden & starten</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════ TOPBAR -->
+<div class="topbar">
+  <div class="logo">
+    <div class="logo-mark">M</div>
+    <div>
+      <div class="logo-text">Micropower Group</div>
+      <div class="logo-sub">Angebotsmonitor 2026 · Vertriebsziel-Tracking</div>
+    </div>
+  </div>
+  <div class="topbar-right">
+    <div class="sync-label" id="syncLabel">—</div>
+    <div class="status-pill status-disconnected" id="ghStatus">
+      <div class="status-dot"></div>
+      <span id="ghStatusText">Nicht verbunden</span>
+    </div>
+    <button class="btn-icon" title="Datenbank leeren" onclick="clearDatabase()" style="color:var(--red);border-color:rgba(239,68,68,0.3)">🗑</button>
+    <button class="btn-icon" title="Einstellungen ändern" onclick="openSetup()">⚙</button>
+  </div>
+</div>
+<div class="accent-line"></div>
+
+<!-- ═══════════════════════════════════════════ PAGE -->
+<div class="page">
+  <div class="page-header">
+    <div class="page-title">Angebots<span>ablehnungsquote</span> · Ziel 2026</div>
+    <div class="page-sub">Basis 2025: 39,05% · Zielwert 2026: 37,05% (−2,00 Prozentpunkte) · Sales Director Target</div>
+  </div>
+
+  <!-- Alerts -->
+  <div class="alert-wrap" id="alertArea"></div>
+
+  <!-- KPIs -->
+  <div class="kpi-grid">
+    <div class="kpi" style="--kpi-color:var(--red)">
+      <div class="kpi-label">Basis 2025</div>
+      <div class="kpi-value">39,05%</div>
+      <div class="kpi-meta">Ausgangswert Vorjahr</div>
+      <div class="badge badge-red">▲ Ausgangspunkt</div>
+    </div>
+    <div class="kpi" style="--kpi-color:var(--green)">
+      <div class="kpi-label">Ziel 2026</div>
+      <div class="kpi-value">37,05%</div>
+      <div class="kpi-meta">−2,00 Prozentpunkte</div>
+      <div class="badge badge-green">✓ Sales Director</div>
+    </div>
+    <div class="kpi" id="kpiCurrent" style="--kpi-color:var(--amber)">
+      <div class="kpi-label">Ist-Quote 2026</div>
+      <div class="kpi-value" id="kpiCurrentVal">—</div>
+      <div class="kpi-meta" id="kpiCurrentMeta">Noch keine Daten</div>
+      <div class="badge" id="kpiCurrentBadge" style="display:none"></div>
+    </div>
+    <div class="kpi" style="--kpi-color:#60a5fa">
+      <div class="kpi-label">Angebote gesamt</div>
+      <div class="kpi-value" id="kpiTotal">0</div>
+      <div class="kpi-meta">davon <span id="kpiAblehnung">0</span> abgelehnt · nur abgeschl.</div>
+    </div>
+    <div class="kpi" style="--kpi-color:#a78bfa">
+      <div class="kpi-label">Ø letzte 3 Monate</div>
+      <div class="kpi-value" id="kpiTrend">—</div>
+      <div class="kpi-meta" id="kpiTrendMeta">Zu wenig Daten</div>
+    </div>
+  </div>
+
+  <!-- Main Layout -->
+  <div class="main-layout">
+    <!-- Left Column -->
+    <div style="display:flex;flex-direction:column;gap:14px">
+
+      <!-- Chart Card -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Monatsverlauf 2026</span>
+          <span class="card-badge" id="chartBadge">—</span>
+        </div>
+        <div class="card-body" style="padding-bottom:10px">
+          <svg class="chart-svg" id="mainChart" viewBox="0 0 680 190" preserveAspectRatio="none">
+            <text x="340" y="100" text-anchor="middle" fill="#3d5470" font-family="Inter" font-size="12" font-weight="500">Monatsdaten erfassen um den Verlauf anzuzeigen</text>
+          </svg>
+        </div>
+
+        <!-- CSV Upload -->
+        <div class="entry-section">
+          <div class="entry-label">📂 CSV-Import (aus CRM/ERP)</div>
+          <div class="csv-drop" id="csvDrop"
+            ondragover="event.preventDefault();this.classList.add('drag-over')"
+            ondragleave="this.classList.remove('drag-over')"
+            ondrop="handleCsvDrop(event)">
+            <input type="file" accept=".csv" onchange="handleCsvFile(this.files[0])">
+            <div class="csv-icon">📄</div>
+            <div class="csv-drop-title">CSV-Datei hier ablegen oder klicken</div>
+            <div class="csv-drop-sub">Erwartet: Semikolon-getrennt · Spalten <span>„Belegdatum"</span> und <span>„Status Angebot"</span></div>
+          </div>
+          <div class="csv-preview" id="csvPreview">
+            <div class="csv-preview-header">
+              <div class="csv-preview-title" id="csvPreviewTitle">Vorschau</div>
+              <div style="display:flex;gap:8px">
+                <button class="btn btn-ghost" style="font-size:11px;padding:5px 12px" onclick="clearCsvPreview()">✕ Verwerfen</button>
+                <button class="btn btn-primary" id="csvImportBtn" onclick="importCsv()">↑ In Dashboard übernehmen</button>
+              </div>
+            </div>
+            <div class="csv-preview-stats" id="csvPreviewStats"></div>
+            <div class="csv-months-list" id="csvMonthsList"></div>
+            <div style="font-size:11px;color:var(--text-dim);font-family:'JetBrains Mono',monospace" id="csvImportNote"></div>
+          </div>
+          <div class="entry-hint" id="csvHint"></div>
+        </div>
+
+        <div class="entry-section" style="border-top:1px solid var(--border)">
+          <div class="entry-label" style="margin-bottom:10px">✏️ Manuelle Eingabe (einzelner Monat)</div>
+          <div class="entry-row">
+            <div class="field">
+              <label>Monat</label>
+              <select id="selMonth">
+                <option value="0">Januar 2026</option><option value="1">Februar 2026</option>
+                <option value="2">März 2026</option><option value="3">April 2026</option>
+                <option value="4">Mai 2026</option><option value="5">Juni 2026</option>
+                <option value="6">Juli 2026</option><option value="7">August 2026</option>
+                <option value="8">September 2026</option><option value="9">Oktober 2026</option>
+                <option value="10">November 2026</option><option value="11">Dezember 2026</option>
+              </select>
+            </div>
+            <div class="field">
+              <label>Abgeschlossene Angebote</label>
+              <input type="number" id="inpTotal" placeholder="Erfüllt+Abgelehnt+Angenom." min="1">
+            </div>
+            <div class="field">
+              <label>Davon abgelehnt</label>
+              <input type="number" id="inpAbgelehnt" placeholder="z.B. 47" min="0">
+            </div>
+            <div>
+              <button class="btn btn-primary" id="saveBtn" onclick="addEntry()">Speichern</button>
+            </div>
+          </div>
+          <div class="entry-hint" id="entryHint"></div>
+        </div>
+      </div>
+
+      <!-- Table Card -->
+      <div class="card">
+        <div class="card-header">
+          <span class="card-title">Monatsübersicht</span>
+          <span class="card-badge" id="tableBadge">0 Monate erfasst</span>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Monat</th>
+                <th>Angebote (abgeschl.)</th>
+                <th>Abgelehnt</th>
+                <th>Quote</th>
+                <th>vs. Ziel (37,05%)</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="dataTableBody">
+              <tr><td colspan="7" class="empty-row">Keine Monatsdaten vorhanden · Daten oben eintragen</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-stack">
+
+      <!-- Gauge + Progress -->
+      <div class="card">
+        <div class="card-header"><span class="card-title">Zielerreichung</span></div>
+        <div class="card-body">
+          <div class="gauge-wrap">
+            <svg width="200" height="120" viewBox="0 0 200 120" id="gaugeSvg">
+              <defs>
+                <linearGradient id="gaugeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#22c55e"/>
+                  <stop offset="50%" stop-color="#f59e0b"/>
+                  <stop offset="100%" stop-color="#ef4444"/>
+                </linearGradient>
+              </defs>
+              <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="14" stroke-linecap="round"/>
+              <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="url(#gaugeGrad)" stroke-width="14" stroke-linecap="round"
+                stroke-dasharray="251.2" stroke-dashoffset="251.2" id="gaugeArc" style="transition:stroke-dashoffset 1s ease"/>
+              <!-- Target marker -->
+              <line x1="98" y1="22" x2="102" y2="32" stroke="#22c55e" stroke-width="2"/>
+              <text x="100" y="80" text-anchor="middle" fill="#f0f4fa" font-size="22" font-weight="800" font-family="Inter" id="gaugeValText">—</text>
+              <text x="100" y="96" text-anchor="middle" fill="#8fa3c0" font-size="9" font-family="Inter" id="gaugeLabelText">Keine Daten</text>
+            </svg>
+          </div>
+
+          <div class="o-divider"></div>
+
+          <div class="prog-item">
+            <div class="prog-row">
+              <span class="prog-label">Basis 2025 (Ausgangspunkt)</span>
+              <span class="prog-val" style="color:var(--red)">39,05%</span>
+            </div>
+            <div class="prog-bar"><div class="prog-fill" style="width:78%;background:var(--red)"></div></div>
+          </div>
+          <div class="prog-item">
+            <div class="prog-row">
+              <span class="prog-label">Ziel 2026</span>
+              <span class="prog-val" style="color:var(--green)">37,05%</span>
+            </div>
+            <div class="prog-bar"><div class="prog-fill" style="width:74%;background:var(--green)"></div></div>
+          </div>
+          <div class="prog-item" style="margin-bottom:0">
+            <div class="prog-row">
+              <span class="prog-label">Aktuell 2026</span>
+              <span class="prog-val" id="progCurrentVal" style="color:var(--amber)">—</span>
+            </div>
+            <div class="prog-bar"><div class="prog-fill" id="progBar" style="width:0%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forecast -->
+      <div class="card">
+        <div class="card-header"><span class="card-title">Jahresprognose</span></div>
+        <div class="card-body">
+          <div id="forecastContent" style="text-align:center;color:var(--text-dim);font-size:12px;padding:10px 0">Min. 2 Monate für Prognose erforderlich</div>
+        </div>
+      </div>
+
+      <!-- AI -->
+      <div class="card">
+        <div class="card-header"><span class="card-title">KI-Analyse & Handlungsempfehlungen</span></div>
+        <div class="card-body">
+          <button class="ai-btn" id="aiBtn" onclick="runAI()">
+            <span>✦</span> Analyse generieren
+          </button>
+          <div class="ai-output" id="aiOutput"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+// ═══════════════════════════════════════════════════════════
+// CONSTANTS
+// ═══════════════════════════════════════════════════════════
+const TARGET = 37.05;
+const BASIS  = 39.05;
+const MONTHS = ['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+const FILE_PATH = 'angebotsmonitor-2026.json';
+const COMMIT_MSG = 'Angebotsmonitor: Daten aktualisiert';
+
+// ═══════════════════════════════════════════════════════════
+// GITHUB STATE
+// ═══════════════════════════════════════════════════════════
+let gh = {
+  token: localStorage.getItem('gh_token') || '',
+  owner: localStorage.getItem('gh_owner') || '',
+  repo:  localStorage.getItem('gh_repo')  || '',
+  sha:   null
+};
+
+let monthData = {}; // { "0": {total, abgelehnt}, ... }
+
+// ═══════════════════════════════════════════════════════════
+// GITHUB API
+// ═══════════════════════════════════════════════════════════
+function ghHeaders() {
+  return {
+    'Authorization': `token ${gh.token}`,
+    'Content-Type': 'application/json',
+    'Accept': 'application/vnd.github.v3+json'
+  };
+}
+
+async function ghGet() {
+  const url = `https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${FILE_PATH}`;
+  const res = await fetch(url, { headers: ghHeaders() });
+  if (res.status === 404) return null; // file doesn't exist yet
+  if (!res.ok) throw new Error(`GitHub API Fehler: ${res.status}`);
+  const json = await res.json();
+  gh.sha = json.sha;
+  const content = JSON.parse(atob(json.content.replace(/\n/g,'')));
+  return content;
+}
+
+async function ghSave(data) {
+  const url = `https://api.github.com/repos/${gh.owner}/${gh.repo}/contents/${FILE_PATH}`;
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+  const body = { message: COMMIT_MSG, content };
+  if (gh.sha) body.sha = gh.sha;
+  const res = await fetch(url, { method: 'PUT', headers: ghHeaders(), body: JSON.stringify(body) });
+  if (!res.ok) {
+    const err = await res.json();
+    throw new Error(err.message || 'Speichern fehlgeschlagen');
+  }
+  const json = await res.json();
+  gh.sha = json.content?.sha;
+}
+
+// ═══════════════════════════════════════════════════════════
+// SETUP / CONNECT
+// ═══════════════════════════════════════════════════════════
+function openSetup() {
+  document.getElementById('ghToken').value = gh.token;
+  document.getElementById('ghOwner').value = gh.owner;
+  document.getElementById('ghRepo').value  = gh.repo;
+  document.getElementById('setupModal').style.display = 'flex';
+  document.getElementById('setupError').style.display = 'none';
+}
+
+function closeSetup() {
+  document.getElementById('setupModal').style.display = 'none';
+}
+
+async function connectGitHub() {
+  const token = document.getElementById('ghToken').value.trim();
+  const owner = document.getElementById('ghOwner').value.trim();
+  const repo  = document.getElementById('ghRepo').value.trim();
+  const errEl = document.getElementById('setupError');
+  const btn   = document.getElementById('connectBtn');
+
+  if (!token || !owner || !repo) {
+    errEl.style.display = 'block';
+    errEl.textContent = '⚠ Bitte alle Felder ausfüllen.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner"></div> Verbinde...';
+  errEl.style.display = 'none';
+
+  gh = { token, owner, repo, sha: null };
+
+  try {
+    // Test repo access
+    const testRes = await fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: ghHeaders() });
+    if (!testRes.ok) {
+      const e = await testRes.json();
+      throw new Error(e.message || `Repository nicht erreichbar (${testRes.status})`);
+    }
+
+    // Load existing data
+    const existing = await ghGet();
+    if (existing && existing.months) {
+      monthData = existing.months;
+    } else {
+      monthData = {};
+    }
+
+    // Save credentials
+    localStorage.setItem('gh_token', token);
+    localStorage.setItem('gh_owner', owner);
+    localStorage.setItem('gh_repo',  repo);
+
+    closeSetup();
+    setConnected(true);
+    render();
+
+  } catch(e) {
+    errEl.style.display = 'block';
+    errEl.textContent = '✕ ' + e.message;
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = 'Verbinden & starten';
+}
+
+function setConnected(ok) {
+  const pill = document.getElementById('ghStatus');
+  const txt  = document.getElementById('ghStatusText');
+  if (ok) {
+    pill.className = 'status-pill status-connected';
+    txt.textContent = `${gh.owner}/${gh.repo}`;
+  } else {
+    pill.className = 'status-pill status-disconnected';
+    txt.textContent = 'Nicht verbunden';
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// DATA LOGIC
+// ═══════════════════════════════════════════════════════════
+function getStats() {
+  const keys = Object.keys(monthData).map(Number).sort((a,b)=>a-b);
+  let totTotal = 0, totAbgelehnt = 0;
+  const monthly = keys.map(k => {
+    const {total, abgelehnt} = monthData[k];
+    totTotal += total;
+    totAbgelehnt += abgelehnt;
+    return { m: k, total, abgelehnt, quote: abgelehnt/total*100 };
+  });
+  const overallQuote = totTotal > 0 ? totAbgelehnt/totTotal*100 : null;
+  const last3 = monthly.slice(-3);
+  const avg3  = last3.length ? last3.reduce((s,x)=>s+x.quote,0)/last3.length : null;
+  return { monthly, totTotal, totAbgelehnt, overallQuote, avg3 };
+}
+
+// ═══════════════════════════════════════════════════════════
+// ADD ENTRY
+// ═══════════════════════════════════════════════════════════
+async function addEntry() {
+  const month   = parseInt(document.getElementById('selMonth').value);
+  const total   = parseInt(document.getElementById('inpTotal').value);
+  const ableh   = parseInt(document.getElementById('inpAbgelehnt').value);
+  const hint    = document.getElementById('entryHint');
+  const btn     = document.getElementById('saveBtn');
+
+  if (isNaN(total) || isNaN(ableh) || total < 1) {
+    hint.style.color = 'var(--red)'; hint.textContent = '⚠ Bitte gültige Zahlen eingeben.'; return;
+  }
+  if (ableh > total) {
+    hint.style.color = 'var(--red)'; hint.textContent = '⚠ Abgelehnte Angebote > Gesamtanzahl.'; return;
+  }
+  if (!gh.token) {
+    hint.style.color = 'var(--amber)'; hint.textContent = '⚠ Bitte zuerst GitHub verbinden.'; return;
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner" style="width:14px;height:14px;border-width:2px"></div>';
+  hint.style.color = 'var(--text-dim)';
+  hint.textContent = 'Speichere auf GitHub...';
+
+  monthData[month] = { total, abgelehnt: ableh };
+
+  try {
+    await ghSave({ months: monthData, updated: new Date().toISOString() });
+    const q = (ableh/total*100).toFixed(2).replace('.',',');
+    hint.style.color = 'var(--green)';
+    hint.textContent = `✓ ${MONTHS[month]} gespeichert · Quote: ${q}% · Commit auf GitHub`;
+    document.getElementById('inpTotal').value = '';
+    document.getElementById('inpAbgelehnt').value = '';
+    setSyncLabel('Gespeichert ' + new Date().toLocaleTimeString('de-DE'));
+    render();
+  } catch(e) {
+    hint.style.color = 'var(--red)';
+    hint.textContent = '✕ Fehler beim Speichern: ' + e.message;
+    // Rollback
+    delete monthData[month];
+  }
+
+  btn.disabled = false;
+  btn.textContent = 'Speichern';
+}
+
+async function deleteEntry(month) {
+  if (!confirm(`${MONTHS[month]} wirklich löschen?`)) return;
+  const backup = {...monthData};
+  delete monthData[month];
+  try {
+    await ghSave({ months: monthData, updated: new Date().toISOString() });
+    setSyncLabel('Gespeichert ' + new Date().toLocaleTimeString('de-DE'));
+    render();
+  } catch(e) {
+    monthData = backup;
+    alert('Löschen fehlgeschlagen: ' + e.message);
+  }
+}
+
+function setSyncLabel(txt) {
+  document.getElementById('syncLabel').textContent = txt;
+}
+
+// ═══════════════════════════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════════════════════════
+function render() {
+  const stats = getStats();
+  renderAlerts(stats);
+  renderKPIs(stats);
+  renderChart(stats);
+  renderGauge(stats);
+  renderForecast(stats);
+  renderTable(stats);
+}
+
+function fmt(n) { return n.toFixed(2).replace('.',',') + '%'; }
+
+function renderKPIs(stats) {
+  const {totTotal, totAbgelehnt, overallQuote, avg3, monthly} = stats;
+  document.getElementById('kpiTotal').textContent = totTotal;
+  document.getElementById('kpiAblehnung').textContent = totAbgelehnt;
+  document.getElementById('tableBadge').textContent = monthly.length + ' Monate erfasst';
+
+  if (overallQuote !== null) {
+    const diff = overallQuote - TARGET;
+    document.getElementById('kpiCurrentVal').textContent = fmt(overallQuote);
+    document.getElementById('kpiCurrentMeta').textContent = `Aus ${totTotal} Angeboten`;
+    const badge = document.getElementById('kpiCurrentBadge');
+    badge.style.display = 'inline-flex';
+    if (diff <= 0) {
+      badge.className = 'badge badge-green';
+      badge.textContent = `✓ ${Math.abs(diff).toFixed(2).replace('.',',')} pp unter Ziel`;
+      document.getElementById('kpiCurrent').style.setProperty('--kpi-color','var(--green)');
+    } else {
+      badge.className = 'badge badge-red';
+      badge.textContent = `▲ +${diff.toFixed(2).replace('.',',')} pp über Ziel`;
+      document.getElementById('kpiCurrent').style.setProperty('--kpi-color','var(--red)');
+    }
+    document.getElementById('progCurrentVal').textContent = fmt(overallQuote);
+    const pBar = document.getElementById('progBar');
+    pBar.style.width = Math.min(overallQuote/50*100, 100) + '%';
+    pBar.style.background = overallQuote <= TARGET ? 'var(--green)' : 'var(--red)';
+    document.getElementById('chartBadge').textContent = fmt(overallQuote) + ' kumuliert';
+  }
+
+  if (avg3 !== null) {
+    document.getElementById('kpiTrend').textContent = fmt(avg3);
+    document.getElementById('kpiTrendMeta').textContent = `Ø ${Math.min(monthly.length,3)} Monate`;
+  }
+}
+
+function renderAlerts(stats) {
+  const {overallQuote, monthly, avg3} = stats;
+  const area = document.getElementById('alertArea');
+  area.innerHTML = '';
+  if (overallQuote === null) return;
+  const add = (type, icon, title, msg) => {
+    area.innerHTML += `<div class="alert alert-${type}"><div class="alert-icon">${icon}</div><div><strong>${title}</strong><p>${msg}</p></div></div>`;
+  };
+  if (overallQuote > BASIS) add('danger','🚨','Kritisch: Quote über Vorjahresbasis!',`Aktuelle Quote ${fmt(overallQuote)} liegt über dem Ausgangswert ${fmt(BASIS)}. Sofortmaßnahmen erforderlich.`);
+  else if (overallQuote > TARGET + 1.5) add('danger','⚠️','Quote deutlich über Zielwert',`Abweichung: +${(overallQuote-TARGET).toFixed(2).replace('.',',')} Prozentpunkte. Proaktive Maßnahmen empfohlen.`);
+  else if (overallQuote > TARGET) add('warning','⚡','Quote leicht über Zielwert',`Differenz zum Ziel: +${(overallQuote-TARGET).toFixed(2).replace('.',',')} pp. Entwicklung beobachten.`);
+  else add('success','✅','Zielkorridor erreicht',`Quote ${fmt(overallQuote)} liegt unter dem Zielwert ${fmt(TARGET)}. Kurs halten!`);
+
+  if (monthly.length >= 3) {
+    const last2 = monthly.slice(-2);
+    if (last2[1]?.quote > last2[0]?.quote + 1)
+      add('warning','📈','Negativer Trend erkennbar',`Ablehnungsquote steigt in den letzten Monaten. Ursachenanalyse empfohlen.`);
+  }
+}
+
+function renderChart(stats) {
+  const svg = document.getElementById('mainChart');
+  if (stats.monthly.length === 0) {
+    svg.innerHTML = `<text x="340" y="100" text-anchor="middle" fill="#3d5470" font-family="Inter" font-size="12" font-weight="500">Monatsdaten erfassen um den Verlauf anzuzeigen</text>`;
+    return;
+  }
+  const W=680, H=190, pL=48, pR=16, pT=18, pB=28;
+  const pW=W-pL-pR, pH=H-pT-pB;
+  const quotes = stats.monthly.map(r=>r.quote);
+  const minQ = Math.max(0, Math.min(...quotes, TARGET)-4);
+  const maxQ = Math.max(...quotes, BASIS)+4;
+  const xs = i => pL + (i/(MONTHS.length-1))*pW;
+  const ys = q => pT + pH - ((q-minQ)/(maxQ-minQ))*pH;
+  const pts = stats.monthly.map(r=>({x:xs(r.m), y:ys(r.quote), q:r.quote, m:r.m}));
+  const ty = ys(TARGET), by = ys(BASIS);
+
+  let area = `M${pts[0].x} ${pH+pT}`;
+  pts.forEach(p=>{ area+=` L${p.x} ${p.y}`; });
+  area+=` L${pts[pts.length-1].x} ${pH+pT}Z`;
+  let line = `M${pts[0].x} ${pts[0].y}`;
+  pts.slice(1).forEach(p=>{ line+=` L${p.x} ${p.y}`; });
+
+  const yTicks = [minQ, TARGET, BASIS, maxQ];
+  const xLabels = stats.monthly.map(r=>({x:xs(r.m), lbl:MONTHS[r.m].substring(0,3)}));
+
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="aG" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#e85a0e" stop-opacity="0.25"/>
+        <stop offset="100%" stop-color="#e85a0e" stop-opacity="0"/>
+      </linearGradient>
+    </defs>
+    ${yTicks.map(q=>{
+      const y=ys(q); const col = q===TARGET?'#22c55e':q===BASIS?'#ef4444':'rgba(255,255,255,0.05)';
+      return `<line x1="${pL}" y1="${y}" x2="${W-pR}" y2="${y}" stroke="${col}" stroke-width="${q===TARGET||q===BASIS?1:0.5}" stroke-dasharray="${q===TARGET?'5,3':q===BASIS?'5,3':''}"/>
+        <text x="${pL-4}" y="${y+3}" text-anchor="end" fill="${q===TARGET?'#22c55e':q===BASIS?'#ef4444':'#3d5470'}" font-size="9" font-family="JetBrains Mono">${q.toFixed(1)}%</text>`;
+    }).join('')}
+    <path d="${area}" fill="url(#aG)"/>
+    <path d="${line}" fill="none" stroke="#e85a0e" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+    ${pts.map(p=>`
+      <circle cx="${p.x}" cy="${p.y}" r="5" fill="${p.q<=TARGET?'#22c55e':'#ef4444'}" stroke="#152038" stroke-width="2.5"/>
+      <text x="${p.x}" y="${p.y-10}" text-anchor="middle" fill="${p.q<=TARGET?'#22c55e':'#ef4444'}" font-size="9" font-family="JetBrains Mono" font-weight="600">${p.q.toFixed(1)}%</text>
+    `).join('')}
+    ${xLabels.map(l=>`<text x="${l.x}" y="${H-3}" text-anchor="middle" fill="#3d5470" font-size="9" font-family="JetBrains Mono">${l.lbl}</text>`).join('')}
+    <text x="${W-pR+2}" y="${ty+3}" fill="#22c55e" font-size="8" font-family="JetBrains Mono">ZIEL</text>
+    <text x="${W-pR+2}" y="${by+3}" fill="#ef4444" font-size="8" font-family="JetBrains Mono">2025</text>
+  `;
+}
+
+function renderGauge(stats) {
+  const {overallQuote} = stats;
+  const arc = document.getElementById('gaugeArc');
+  const val = document.getElementById('gaugeValText');
+  const lbl = document.getElementById('gaugeLabelText');
+  if (overallQuote === null) {
+    arc.setAttribute('stroke-dashoffset','251.2'); val.textContent='—'; lbl.textContent='Keine Daten'; return;
+  }
+  const pct = Math.min(Math.max((overallQuote-30)/15,0),1);
+  arc.setAttribute('stroke-dashoffset', 251.2*(1-pct));
+  val.textContent = fmt(overallQuote);
+  const diff = overallQuote-TARGET;
+  lbl.textContent = diff<=0 ? `✓ ${Math.abs(diff).toFixed(2).replace('.',',')} pp im Ziel` : `${diff.toFixed(2).replace('.',',')} pp über Ziel`;
+  lbl.setAttribute('fill', overallQuote<=TARGET?'#22c55e':'#f59e0b');
+}
+
+function renderForecast(stats) {
+  const area = document.getElementById('forecastContent');
+  if (stats.monthly.length < 2) {
+    area.innerHTML = '<div style="text-align:center;color:var(--text-dim);font-size:12px;padding:8px">Min. 2 Monate für Prognose</div>';
+    return;
+  }
+  const base = stats.avg3 || stats.overallQuote;
+  const sc = [
+    {lbl:'Optimist',d:-0.6,c:'var(--green)'},
+    {lbl:'Realist', d:0,   c:'var(--amber)'},
+    {lbl:'Pessimist',d:+0.6,c:'var(--red)'},
+  ];
+  area.innerHTML = `<div class="fc-grid">${sc.map(s=>{
+    const q=base+s.d, ok=q<=TARGET;
+    return `<div class="fc-card">
+      <div class="fc-label">${s.lbl}</div>
+      <div class="fc-val" style="color:${s.c}">${fmt(q)}</div>
+      <div class="fc-note" style="color:${ok?'var(--green)':'var(--red)'}">${ok?'✓ Ziel ok':'✗ Ziel verfehlt'}</div>
+    </div>`;
+  }).join('')}</div>`;
+}
+
+function renderTable(stats) {
+  const tbody = document.getElementById('dataTableBody');
+  if (stats.monthly.length === 0) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty-row">Keine Monatsdaten vorhanden · Daten oben eintragen</td></tr>';
+    return;
+  }
+  tbody.innerHTML = stats.monthly.map(r => {
+    const diff = r.quote - TARGET;
+    const absDiff = Math.abs(diff).toFixed(2).replace('.',',');
+    const tagClass = r.quote<=TARGET?'tag-green':r.quote<=TARGET+2?'tag-amber':'tag-red';
+    const tagText = r.quote<=TARGET?'Im Ziel':'Über Ziel';
+    const diffStr = diff<=0?`−${absDiff} pp`:`+${absDiff} pp`;
+    return `<tr>
+      <td class="td-month">${MONTHS[r.m]}</td>
+      <td>${r.total}</td>
+      <td>${r.abgelehnt}</td>
+      <td style="color:${r.quote<=TARGET?'var(--green)':r.quote<=TARGET+2?'var(--amber)':'var(--red)'};font-weight:700">${fmt(r.quote)}</td>
+      <td style="font-size:11px;color:${r.quote<=TARGET?'var(--green)':'var(--red)'}">${diffStr}</td>
+      <td><span class="tag ${tagClass}">${tagText}</span></td>
+      <td><button class="btn btn-ghost" onclick="deleteEntry(${r.m})" style="padding:4px 10px;font-size:11px">✕</button></td>
+    </tr>`;
+  }).join('');
+}
+
+// ═══════════════════════════════════════════════════════════
+// AI
+// ═══════════════════════════════════════════════════════════
+async function runAI() {
+  const stats = getStats();
+  const btn = document.getElementById('aiBtn');
+  const out = document.getElementById('aiOutput');
+
+  // Detect if running locally (file://) - AI won't work due to CORS
+  const isLocal = window.location.protocol === 'file:';
+  if (isLocal) {
+    out.className = 'ai-output show';
+    out.innerHTML = `<div style="color:var(--amber);font-weight:700;margin-bottom:10px">⚠ KI-Analyse nicht verfügbar (lokale Datei)</div>
+<div style="color:var(--text-mid);font-size:12px;line-height:1.8">
+Der Browser blockiert API-Anfragen von lokalen Dateien (<code style="background:rgba(255,255,255,0.07);padding:1px 5px;border-radius:3px">file://</code>).<br><br>
+<strong style="color:var(--text)">Lösung: GitHub Pages aktivieren</strong><br>
+1. github.com → dein Repository öffnen<br>
+2. <strong>Settings</strong> → linke Sidebar: <strong>Pages</strong><br>
+3. Branch: <strong>main</strong> → Ordner: <strong>/ (root)</strong> → <strong>Save</strong><br>
+4. Die HTML-Datei ins Repository hochladen (Upload files)<br>
+5. Dashboard über <code style="background:rgba(255,255,255,0.07);padding:1px 5px;border-radius:3px">https://USERNAME.github.io/REPONAME/micropower-angebotsmonitor.html</code> öffnen<br><br>
+<span style="color:var(--green)">→ Dann funktioniert die KI-Analyse automatisch.</span>
+</div>`;
+    return;
+  }
+
+  const dataStr = stats.monthly.length
+    ? stats.monthly.map(r => `${MONTHS[r.m]}: ${r.total} abgeschlossene Angebote, ${r.abgelehnt} abgelehnt (${r.quote.toFixed(2)}%)`).join('\n')
+    : 'Keine Monatsdaten erfasst.';
+
+  const prompt = `Du bist ein erfahrener Sales-Controller und Vertriebsanalyst.
+
+Vertriebsziel 2026 (von Sales Director vorgegeben):
+- Ablehnungsquote von Angeboten von 39,05% (2025) auf 37,05% senken (−2 Prozentpunkte)
+- Basis: nur abgeschlossene Angebote (Erfüllt / Angenommen / Abgelehnt)
+
+Aktuelle Datenlage 2026:
+${dataStr}
+Kumulierte Ist-Quote: ${stats.overallQuote ? stats.overallQuote.toFixed(2)+'%' : 'Keine Daten'}
+Zielquote: 37,05%
+
+Erstelle eine präzise Analyse auf Deutsch (direkt, ohne Floskeln):
+1. **Lageeinschätzung** (2 Sätze): Wo stehen wir?
+2. **Typische Ursachen** für hohe Ablehnungsquoten in B2B (3–4 Punkte, konkret)
+3. **Top-Maßnahmen** um die Quote zu senken (4–5 sofort umsetzbare Aktionen)
+4. **Frühwarnindikatoren**: Was genau beobachten in den nächsten Wochen?
+
+Ton: Direkt, handlungsorientiert, professionell. Max 250 Wörter.`;
+
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner" style="width:14px;height:14px;border-width:2px"></div> Analyse läuft...';
+  out.className = 'ai-output show ai-cursor';
+  out.textContent = '';
+
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'claude-sonnet-4-20250514',
+        max_tokens: 1000,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+    const data = await res.json();
+    const text = data.content?.map(b => b.text || '').join('') || 'Keine Antwort erhalten.';
+    out.className = 'ai-output show';
+    out.textContent = text;
+  } catch(e) {
+    out.className = 'ai-output show';
+    out.textContent = '✕ Fehler: ' + e.message;
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '<span>✦</span> Analyse erneut starten';
+}
+
+// ═══════════════════════════════════════════════════════════
+// CLEAR DATABASE
+// ═══════════════════════════════════════════════════════════
+async function clearDatabase() {
+  if (!confirm('Alle Monatsdaten unwiderruflich löschen?\n\nDie Datei auf GitHub wird geleert. Diese Aktion kann nicht rückgängig gemacht werden.')) return;
+  if (!gh.token) { alert('Bitte zuerst GitHub verbinden.'); return; }
+
+  monthData = {};
+  try {
+    await ghSave({ months: {}, updated: new Date().toISOString() });
+    setSyncLabel('Datenbank geleert · ' + new Date().toLocaleTimeString('de-DE'));
+    render();
+    // Show confirmation
+    const area = document.getElementById('alertArea');
+    area.innerHTML = `<div class="alert alert-success"><div class="alert-icon">🗑</div><div><strong>Datenbank geleert</strong><p>Alle Monatsdaten wurden entfernt. Du kannst jetzt neu beginnen.</p></div></div>`;
+    setTimeout(() => render(), 3000);
+  } catch(e) {
+    alert('Fehler beim Leeren: ' + e.message);
+  }
+}
+
+// ═══════════════════════════════════════════════════════════
+// CSV IMPORT
+// ═══════════════════════════════════════════════════════════
+
+// Status-Werte die als "abgeschlossen" gelten
+const STATUS_CLOSED    = ['Erfüllt','Abgelehnt','Angenommen'];
+const STATUS_ABGELEHNT = ['Abgelehnt'];
+
+let parsedCsvData = null; // { months: { "0": {total, abgelehnt, rows}, ... }, filename, totalRows }
+
+function handleCsvDrop(e) {
+  e.preventDefault();
+  document.getElementById('csvDrop').classList.remove('drag-over');
+  const file = e.dataTransfer.files[0];
+  if (file) handleCsvFile(file);
+}
+
+function handleCsvFile(file) {
+  if (!file) return;
+  const hint = document.getElementById('csvHint');
+  hint.textContent = '';
+
+  const reader = new FileReader();
+  reader.onload = function(e) {
+    try {
+      // Try UTF-8 first, then fallback to ISO-8859-1 via latin1
+      let text = e.target.result;
+      parseCsvText(text, file.name);
+    } catch(err) {
+      hint.style.color = 'var(--red)';
+      hint.textContent = '✕ Fehler beim Lesen: ' + err.message;
+    }
+  };
+  // Read as binary string to handle both encodings
+  reader.readAsBinaryString(file);
+}
+
+function parseCsvText(rawText, filename) {
+  const hint = document.getElementById('csvHint');
+
+  // Convert possible ISO-8859-1 to UTF-8
+  let text;
+  try {
+    text = decodeURIComponent(escape(rawText));
+  } catch(e) {
+    text = rawText;
+  }
+
+  const lines = text.split(/\r?\n/).filter(l => l.trim());
+  if (lines.length < 2) throw new Error('CSV enthält zu wenige Zeilen.');
+
+  const delim = lines[0].includes(';') ? ';' : ',';
+  const headers = lines[0].split(delim).map(h => h.trim().replace(/^"|"$/g,''));
+
+  // Find required columns – only Belegdatum + Status Angebot needed
+  const colDate   = headers.findIndex(h => h === 'Belegdatum');
+  const colStatus = headers.findIndex(h => h === 'Status Angebot');
+
+  if (colDate   === -1) throw new Error('Spalte „Belegdatum" nicht gefunden. Bitte CSV prüfen.');
+  if (colStatus === -1) throw new Error('Spalte „Status Angebot" nicht gefunden. Bitte CSV prüfen.');
+
+  const monthMap = {}; // key: "YYYY-MM" → { year, month, total, abgelehnt }
+
+  for (let i = 1; i < lines.length; i++) {
+    const cols = lines[i].split(delim).map(c => c.trim().replace(/^"|"$/g,''));
+    if (cols.length < 2) continue;
+
+    const status  = cols[colStatus];
+    const dateStr = cols[colDate]; // DD.MM.YYYY
+
+    // Only count closed offers
+    if (!STATUS_CLOSED.includes(status)) continue;
+
+    // Parse date DD.MM.YYYY
+    const parts = dateStr.split('.');
+    if (parts.length < 3) continue;
+    const month = parseInt(parts[1]) - 1; // 0-indexed
+    const year  = parseInt(parts[2]);
+    if (isNaN(month) || isNaN(year)) continue;
+
+    const key = `${year}-${String(month).padStart(2,'0')}`;
+    if (!monthMap[key]) monthMap[key] = { year, month, total: 0, abgelehnt: 0 };
+    monthMap[key].total++;
+    if (STATUS_ABGELEHNT.includes(status)) monthMap[key].abgelehnt++;
+  }
+
+  const monthEntries = Object.entries(monthMap).sort(([a],[b]) => a.localeCompare(b));
+
+  if (monthEntries.length === 0) {
+    hint.style.color = 'var(--amber)';
+    hint.textContent = '⚠ Keine abgeschlossenen Angebote (Erfüllt/Angenommen/Abgelehnt) gefunden.';
+    return;
+  }
+
+  parsedCsvData = { monthEntries, filename, totalLines: lines.length - 1 };
+  renderCsvPreview(parsedCsvData);
+}
+
+function renderCsvPreview(data) {
+  const { monthEntries, filename, totalLines } = data;
+  const preview = document.getElementById('csvPreview');
+  const statsEl = document.getElementById('csvPreviewStats');
+  const listEl  = document.getElementById('csvMonthsList');
+  const noteEl  = document.getElementById('csvImportNote');
+
+  document.getElementById('csvPreviewTitle').textContent = `Vorschau · ${filename}`;
+
+  // Aggregate totals
+  let totTotal = 0, totAbleh = 0;
+  monthEntries.forEach(([,v]) => { totTotal += v.total; totAbleh += v.abgelehnt; });
+  const totQuote = totTotal > 0 ? totAbleh/totTotal*100 : 0;
+
+  statsEl.innerHTML = `
+    <div class="csv-stat">
+      <div class="csv-stat-val" style="color:var(--orange)">${totalLines}</div>
+      <div class="csv-stat-label">CSV-Zeilen</div>
+    </div>
+    <div class="csv-stat">
+      <div class="csv-stat-val" style="color:#60a5fa">${totTotal}</div>
+      <div class="csv-stat-label">Abgeschlossen</div>
+    </div>
+    <div class="csv-stat">
+      <div class="csv-stat-val" style="color:var(--red)">${totAbleh}</div>
+      <div class="csv-stat-label">Abgelehnt</div>
+    </div>
+    <div class="csv-stat">
+      <div class="csv-stat-val" style="color:${totQuote<=TARGET?'var(--green)':'var(--red)'}">${totQuote.toFixed(2).replace('.',',')}%</div>
+      <div class="csv-stat-label">Quote ges.</div>
+    </div>`;
+
+  listEl.innerHTML = monthEntries.map(([key, v]) => {
+    const q = v.total > 0 ? v.abgelehnt/v.total*100 : 0;
+    const diff = q - TARGET;
+    const mName = MONTHS[v.month] + ' ' + v.year;
+    // Check if month already exists in data
+    const existingKey = v.year === 2026 ? String(v.month) : null;
+    const hasExisting = existingKey && monthData[existingKey];
+    return `<div class="csv-month-row">
+      <div class="csv-month-name">${mName}</div>
+      <div class="csv-month-stats">
+        <span>${v.total} abgeschl.</span>
+        <span>${v.abgelehnt} abgelehnt</span>
+      </div>
+      <div class="csv-month-quote" style="color:${q<=TARGET?'var(--green)':q<=TARGET+2?'var(--amber)':'var(--red)'}">
+        ${q.toFixed(2).replace('.',',')}%
+      </div>
+      ${hasExisting ? '<div class="badge badge-amber" style="font-size:10px;margin-left:8px">↺ Update</div>' : '<div class="badge badge-blue" style="font-size:10px;margin-left:8px">+ Neu</div>'}
+    </div>`;
+  }).join('');
+
+  const updates = monthEntries.filter(([key,v]) => {
+    const ek = v.year === 2026 ? String(v.month) : null;
+    return ek && monthData[ek];
+  }).length;
+  const news = monthEntries.length - updates;
+  noteEl.textContent = `→ ${news} neue Monate · ${updates} bestehende Monate werden aktualisiert · Basis: nur abgeschlossene Angebote (Erfüllt/Angenommen/Abgelehnt)`;
+
+  preview.classList.add('show');
+}
+
+function clearCsvPreview() {
+  parsedCsvData = null;
+  document.getElementById('csvPreview').classList.remove('show');
+  document.getElementById('csvHint').textContent = '';
+  // Reset file input
+  const drop = document.getElementById('csvDrop');
+  const input = drop.querySelector('input[type=file]');
+  input.value = '';
+}
+
+async function importCsv() {
+  if (!parsedCsvData) return;
+  const btn = document.getElementById('csvImportBtn');
+  const hint = document.getElementById('csvHint');
+
+  if (!gh.token) {
+    hint.style.color = 'var(--amber)';
+    hint.textContent = '⚠ Bitte zuerst GitHub verbinden.';
+    return;
+  }
+
+  btn.disabled = true;
+  btn.innerHTML = '<div class="spinner" style="width:12px;height:12px;border-width:2px"></div> Importiere...';
+
+  // Merge CSV data into monthData (only 2026 data)
+  let imported = 0;
+  parsedCsvData.monthEntries.forEach(([key, v]) => {
+    if (v.year === 2026) {
+      monthData[String(v.month)] = { total: v.total, abgelehnt: v.abgelehnt };
+      imported++;
+    }
+  });
+
+  try {
+    await ghSave({ months: monthData, updated: new Date().toISOString() });
+    setSyncLabel('Gespeichert ' + new Date().toLocaleTimeString('de-DE'));
+    hint.style.color = 'var(--green)';
+    hint.textContent = `✓ ${imported} Monate importiert und auf GitHub gespeichert · CSV: ${parsedCsvData.filename}`;
+    clearCsvPreview();
+    render();
+  } catch(e) {
+    hint.style.color = 'var(--red)';
+    hint.textContent = '✕ Fehler beim Speichern: ' + e.message;
+  }
+
+  btn.disabled = false;
+  btn.innerHTML = '↑ In Dashboard übernehmen';
+}
+
+// ═══════════════════════════════════════════════════════════
+// INIT
+// ═══════════════════════════════════════════════════════════
+async function init() {
+  // Pre-select current month
+  document.getElementById('selMonth').value = new Date().getMonth();
+
+  if (!gh.token || !gh.owner || !gh.repo) {
+    openSetup();
+    return;
+  }
+
+  // Try to load data
+  try {
+    setSyncLabel('Lade Daten...');
+    const existing = await ghGet();
+    if (existing?.months) monthData = existing.months;
+    setConnected(true);
+    setSyncLabel('Geladen ' + new Date().toLocaleTimeString('de-DE'));
+    render();
+  } catch(e) {
+    setConnected(false);
+    setSyncLabel('Verbindungsfehler');
+    openSetup();
+  }
+}
+
+init();
+</script>
+</body>
+</html>
