@@ -1,4 +1,13 @@
 {
-  "months": {},
-  "updated": "2026-03-02T10:07:08.411Z"
+  "months": {
+    "0": {
+      "total": 154,
+      "abgelehnt": 57
+    },
+    "1": {
+      "total": 100,
+      "abgelehnt": 13
+    }
+  },
+  "updated": "2026-03-02T10:09:10.937Z"
 }
