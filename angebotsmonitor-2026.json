@@ -1,18 +1,4 @@
 {
-  "months": {
-    "2": {
-      "total": 6,
-      "abgelehnt": 0,
-      "offen": 6,
-      "bearbeiter": {},
-      "kundengruppe": {},
-      "wochen": {
-        "10": {
-          "total": 6,
-          "abgelehnt": 0
-        }
-      }
-    }
-  },
-  "updated": "2026-03-02T10:27:17.879Z"
+  "months": {},
+  "updated": "2026-03-02T10:27:21.943Z"
 }
