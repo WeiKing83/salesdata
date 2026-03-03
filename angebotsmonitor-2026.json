@@ -2656,7 +2656,13 @@
       "desc": "Projektabbruch durch den Kunden"
     }
   },
-  "valueClasses": [],
+  "valueClasses": [
+    {
+      "name": "< 1000 EURO",
+      "min": 0,
+      "max": 1000
+    }
+  ],
   "threshold": 5000,
-  "updated": "2026-03-03T08:40:47.776Z"
+  "updated": "2026-03-03T08:47:04.410Z"
 }
