@@ -2626,9 +2626,13 @@
     "C-2": {
       "type": "C",
       "desc": "Alternativangebot von LEAB angenommen"
+    },
+    "C-3": {
+      "type": "C",
+      "desc": "Auftrag anderweitig vergeben (Kunde hat den Auftrag nicht erhalten - bei Ausschreibungen"
     }
   },
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:36:35.067Z"
+  "updated": "2026-03-03T08:36:47.734Z"
 }
