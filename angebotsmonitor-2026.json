@@ -1,27 +1,5 @@
 {
   "months": {
-    "1": {
-      "total": 205,
-      "abgelehnt": 13,
-      "wochen": {
-        "6": {
-          "total": 64,
-          "abgelehnt": 7
-        },
-        "7": {
-          "total": 44,
-          "abgelehnt": 2
-        },
-        "8": {
-          "total": 48,
-          "abgelehnt": 1
-        },
-        "9": {
-          "total": 49,
-          "abgelehnt": 3
-        }
-      }
-    },
     "2": {
       "total": 6,
       "abgelehnt": 0,
@@ -36,5 +14,5 @@
   "codings": {},
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:34:50.591Z"
+  "updated": "2026-03-03T08:34:53.649Z"
 }
