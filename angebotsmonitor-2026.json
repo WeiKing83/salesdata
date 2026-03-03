@@ -2634,9 +2634,13 @@
     "C-4": {
       "type": "C",
       "desc": "Produkt nicht für die Zwecke geeignet"
+    },
+    "C-5": {
+      "type": "C",
+      "desc": "Geschäft wurde nicht realisiert (Gründe: Kunde hat kein Interesse mehr / keine Rückmeldung etc.)"
     }
   },
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:36:57.964Z"
+  "updated": "2026-03-03T08:37:07.609Z"
 }
