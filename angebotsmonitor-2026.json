@@ -2650,9 +2650,13 @@
     "C-8": {
       "type": "C",
       "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum übersteigt die Angebotsgültigkeit enorm)"
+    },
+    "C-9": {
+      "type": "C",
+      "desc": "Projektabbruch durch den Kunden"
     }
   },
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:37:42.093Z"
+  "updated": "2026-03-03T08:37:59.195Z"
 }
