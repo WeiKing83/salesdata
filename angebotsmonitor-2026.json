@@ -2646,9 +2646,13 @@
     "C-7": {
       "type": "C",
       "desc": "Lieferzeit zu lang"
+    },
+    "C-8": {
+      "type": "C",
+      "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum übersteigt die Angebotsgültigkeit enorm)"
     }
   },
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:37:32.075Z"
+  "updated": "2026-03-03T08:37:42.093Z"
 }
