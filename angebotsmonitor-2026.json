@@ -2638,9 +2638,13 @@
     "C-5": {
       "type": "C",
       "desc": "Geschäft wurde nicht realisiert (Gründe: Kunde hat kein Interesse mehr / keine Rückmeldung etc.)"
+    },
+    "C-6": {
+      "type": "C",
+      "desc": "Kunde hat sich für den Wettbewerber entschieden"
     }
   },
   "valueClasses": [],
   "threshold": null,
-  "updated": "2026-03-03T08:37:07.609Z"
+  "updated": "2026-03-03T08:37:20.765Z"
 }
