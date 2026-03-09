@@ -1,24 +1,24 @@
 {
   "months": {
     "0": {
-      "total": 195,
-      "abgelehnt": 57,
+      "total": 197,
+      "abgelehnt": 59,
       "wochen": {
         "1": {
           "total": 6,
           "abl": 2
         },
         "2": {
-          "total": 39,
-          "abl": 13
+          "total": 40,
+          "abl": 14
         },
         "3": {
           "total": 47,
           "abl": 16
         },
         "4": {
-          "total": 58,
-          "abl": 18
+          "total": 59,
+          "abl": 19
         },
         "5": {
           "total": 45,
@@ -94,7 +94,7 @@
         },
         {
           "code": "W-04",
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 24037.11,
           "rem": "W-04"
         },
@@ -249,16 +249,16 @@
           "rem": "C-8"
         },
         {
-          "code": "W-10",
-          "status": "Neu",
+          "code": "C-3",
+          "status": "Abgelehnt",
           "brutto": 1586.75,
-          "rem": "W-10"
+          "rem": "C-3"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 1403.76,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "C-8",
@@ -271,6 +271,12 @@
           "status": "Abgelehnt",
           "brutto": 1513.2,
           "rem": "C-8"
+        },
+        {
+          "code": null,
+          "status": "Erfüllt",
+          "brutto": 738.12,
+          "rem": "A-Q2"
         },
         {
           "code": "C-8",
@@ -471,10 +477,10 @@
           "rem": "W-10 MPA"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 231.25,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "C-6",
@@ -531,10 +537,10 @@
           "rem": "C-5"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 244.6,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "C-8",
@@ -577,6 +583,12 @@
           "status": "Erfüllt",
           "brutto": 206.79,
           "rem": "W-07"
+        },
+        {
+          "code": "C-5",
+          "status": "Abgelehnt",
+          "brutto": 2127.36,
+          "rem": "C-5"
         },
         {
           "code": "C-8",
@@ -807,10 +819,10 @@
           "rem": "W-11"
         },
         {
-          "code": "W-10",
-          "status": "Neu",
+          "code": "W-12",
+          "status": "Erfüllt",
           "brutto": 441.37,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "C-5",
@@ -819,10 +831,10 @@
           "rem": "C-5"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 1893.31,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-09",
@@ -873,10 +885,10 @@
           "rem": "C-8"
         },
         {
-          "code": "W-10",
-          "status": "Neu",
+          "code": "W-13",
+          "status": "Zurückgestellt",
           "brutto": 21388.51,
-          "rem": "W-10"
+          "rem": "W-13"
         },
         {
           "code": "C-5",
@@ -927,10 +939,10 @@
           "rem": "C-2"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 436.19,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-13",
@@ -993,10 +1005,10 @@
           "rem": "W-08"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 288.93,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-09",
@@ -1065,10 +1077,10 @@
           "rem": "W-07 MU"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 19545.99,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-09",
@@ -1113,10 +1125,10 @@
           "rem": "W-09"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 1012.44,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-09",
@@ -1143,10 +1155,10 @@
           "rem": "W-10"
         },
         {
-          "code": "W-10",
-          "status": "Neu",
+          "code": "W-13",
+          "status": "Zurückgestellt",
           "brutto": 2737.89,
-          "rem": "W-10"
+          "rem": "W-13"
         },
         {
           "code": "W-13",
@@ -1173,10 +1185,10 @@
           "rem": "W-09"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 352.69,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-12",
@@ -1198,19 +1210,19 @@
         }
       ],
       "brutto": {
-        "abl": 98652.38999999998,
-        "won": 191765.43999999994,
-        "total": 1395398.710000001,
-        "ablCount": 57,
-        "wonCount": 97
+        "abl": 102366.49999999999,
+        "won": 192944.92999999993,
+        "total": 1398264.1900000009,
+        "ablCount": 59,
+        "wonCount": 99
       }
     },
     "1": {
-      "total": 205,
+      "total": 204,
       "abgelehnt": 14,
       "wochen": {
         "6": {
-          "total": 64,
+          "total": 63,
           "abl": 7
         },
         "7": {
@@ -1307,7 +1319,7 @@
         },
         {
           "code": null,
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 851.8,
           "rem": "A-Q2"
         },
@@ -1427,7 +1439,7 @@
         },
         {
           "code": "W-11",
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 4075,
           "rem": "W-11"
         },
@@ -1550,12 +1562,6 @@
           "status": "Erfüllt",
           "brutto": 1075.7,
           "rem": "W-08"
-        },
-        {
-          "code": null,
-          "status": "Neu",
-          "brutto": 87384.91,
-          "rem": "??"
         },
         {
           "code": "W-08",
@@ -1702,10 +1708,10 @@
           "rem": "W-09"
         },
         {
-          "code": "W-10",
+          "code": "W-12",
           "status": "Neu",
           "brutto": 7880.43,
-          "rem": "W-10"
+          "rem": "W-12"
         },
         {
           "code": "W-11",
@@ -1721,7 +1727,7 @@
         },
         {
           "code": "W-11",
-          "status": "Neu",
+          "status": "Angenommen",
           "brutto": 1650.86,
           "rem": "W-11"
         },
@@ -1733,7 +1739,7 @@
         },
         {
           "code": "W-13",
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 343.1,
           "rem": "W-13"
         },
@@ -1855,13 +1861,13 @@
           "code": "W-10",
           "status": "Neu",
           "brutto": 34692.36,
-          "rem": "W-10"
+          "rem": "W-10 MPA"
         },
         {
           "code": "W-10",
           "status": "Neu",
           "brutto": 24666.13,
-          "rem": "W-10"
+          "rem": "W-10 MPA"
         },
         {
           "code": "W-09",
@@ -2063,7 +2069,7 @@
         },
         {
           "code": "W-12",
-          "status": "Neu",
+          "status": "Angenommen",
           "brutto": 128.16,
           "rem": "W-12"
         },
@@ -2105,7 +2111,7 @@
         },
         {
           "code": "W-11",
-          "status": "Neu",
+          "status": "Angenommen",
           "brutto": 150,
           "rem": "W-11 MU"
         },
@@ -2249,7 +2255,7 @@
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 715.59,
           "rem": "W-13"
         },
@@ -2261,7 +2267,7 @@
         },
         {
           "code": "W-12",
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 478.02,
           "rem": "W-12"
         },
@@ -2405,7 +2411,7 @@
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 1530.48,
           "rem": "W-13"
         },
@@ -2423,13 +2429,13 @@
         },
         {
           "code": "W-11",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 105.86,
           "rem": "W-11"
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Angenommen",
           "brutto": 6941.51,
           "rem": "W-13 RDE"
         },
@@ -2460,18 +2466,22 @@
       ],
       "brutto": {
         "abl": 53264.2,
-        "won": 202661.4599999999,
-        "total": 1925047.010000002,
+        "won": 213883.91999999993,
+        "total": 1837662.100000002,
         "ablCount": 14,
-        "wonCount": 89
+        "wonCount": 96
       }
     },
     "2": {
-      "total": 22,
+      "total": 54,
       "abgelehnt": 0,
       "wochen": {
         "10": {
-          "total": 22,
+          "total": 50,
+          "abl": 0
+        },
+        "11": {
+          "total": 4,
           "abl": 0
         }
       },
@@ -2526,7 +2536,7 @@
         },
         {
           "code": "W-12",
-          "status": "Angenommen",
+          "status": "Erfüllt",
           "brutto": 459.97,
           "rem": "W-12"
         },
@@ -2550,7 +2560,7 @@
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Angenommen",
           "brutto": 3391.5,
           "rem": "W-13"
         },
@@ -2562,7 +2572,7 @@
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 232.26,
           "rem": "W-13"
         },
@@ -2573,12 +2583,6 @@
           "rem": "W-11 TLA"
         },
         {
-          "code": "W-14",
-          "status": "Neu",
-          "brutto": 16084.93,
-          "rem": "W-14"
-        },
-        {
           "code": "W-13",
           "status": "Neu",
           "brutto": 1228.91,
@@ -2586,7 +2590,7 @@
         },
         {
           "code": "W-13",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 543.09,
           "rem": "W-13"
         },
@@ -2604,17 +2608,215 @@
         },
         {
           "code": "W-14",
-          "status": "Neu",
+          "status": "Erfüllt",
           "brutto": 106.51,
           "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 16084.93,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 1021.6,
+          "rem": "W-14"
+        },
+        {
+          "code": "P-1",
+          "status": "Neu",
+          "brutto": 7028.15,
+          "rem": "P-1"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 1751.32,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 30.95,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Erfüllt",
+          "brutto": 709.93,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Angenommen",
+          "brutto": 990.91,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 704.6,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Erfüllt",
+          "brutto": 973.54,
+          "rem": "W-14"
+        },
+        {
+          "code": "P-1",
+          "status": "Neu",
+          "brutto": 9405.3,
+          "rem": "P-1"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 1800,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 319.52,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 1393.13,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 2249.27,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-12",
+          "status": "Neu",
+          "brutto": 267.2,
+          "rem": "W-12"
+        },
+        {
+          "code": "W-11",
+          "status": "Neu",
+          "brutto": 15534.06,
+          "rem": "W-11"
+        },
+        {
+          "code": "W-12",
+          "status": "Neu",
+          "brutto": 1082.51,
+          "rem": "W-12"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 769.25,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-11",
+          "status": "Neu",
+          "brutto": 9971.96,
+          "rem": "W-11"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 1529.27,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-14",
+          "status": "Angenommen",
+          "brutto": 464.2,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 1598.71,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 12621.58,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-14",
+          "status": "Neu",
+          "brutto": 3110.36,
+          "rem": "W-14"
+        },
+        {
+          "code": "W-12",
+          "status": "Neu",
+          "brutto": 2952.74,
+          "rem": "W-12"
+        },
+        {
+          "code": "W-13",
+          "status": "Angenommen",
+          "brutto": 267.58,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 2255.7,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-11",
+          "status": "Neu",
+          "brutto": 104857.92,
+          "rem": "W-11 MU"
+        },
+        {
+          "code": "W-12",
+          "status": "Neu",
+          "brutto": 403.9,
+          "rem": "W-12"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 312.79,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 284.1,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Angenommen",
+          "brutto": 563.54,
+          "rem": "W-13"
+        },
+        {
+          "code": "W-13",
+          "status": "Neu",
+          "brutto": 1001.86,
+          "rem": "W-13"
         }
       ],
       "brutto": {
         "abl": 0,
-        "won": 1432.97,
-        "total": 56575.37,
+        "won": 9676.030000000002,
+        "total": 244802.82,
         "ablCount": 0,
-        "wonCount": 3
+        "wonCount": 13
       }
     }
   },
@@ -2633,15 +2835,15 @@
     },
     "C-4": {
       "type": "C",
-      "desc": "Produkt nicht für die Zwecke geeignet"
+      "desc": "Produkt nicht fÃ¼r die Zwecke geeignet"
     },
     "C-5": {
       "type": "C",
-      "desc": "Geschäft wurde nicht realisiert (Gründe: Kunde hat kein Interesse mehr / keine Rückmeldung etc.)"
+      "desc": "GeschÃ¤ft wurde nicht realisiert (GrÃ¼nde: Kunde hat kein Interesse mehr / keine RÃ¼ckmeldung etc.)"
     },
     "C-6": {
       "type": "C",
-      "desc": "Kunde hat sich für den Wettbewerber entschieden"
+      "desc": "Kunde hat sich fÃ¼r den Wettbewerber entschieden"
     },
     "C-7": {
       "type": "C",
@@ -2649,7 +2851,7 @@
     },
     "C-8": {
       "type": "C",
-      "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum übersteigt die Angebotsgültigkeit enorm)"
+      "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum Ã¼bersteigt die AngebotsgÃ¼ltigkeit enorm)"
     },
     "C-9": {
       "type": "C",
@@ -2674,5 +2876,5 @@
     }
   ],
   "threshold": 5000,
-  "updated": "2026-03-03T08:47:59.252Z"
+  "updated": "2026-03-09T09:33:15.706Z"
 }
