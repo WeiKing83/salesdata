@@ -1,1282 +1,5 @@
 {
   "months": {
-    "0": {
-      "total": 207,
-      "abgelehnt": 75,
-      "wochen": {
-        "1": {
-          "total": 6,
-          "abl": 3
-        },
-        "2": {
-          "total": 39,
-          "abl": 14
-        },
-        "3": {
-          "total": 47,
-          "abl": 22
-        },
-        "4": {
-          "total": 61,
-          "abl": 20
-        },
-        "5": {
-          "total": 54,
-          "abl": 16
-        }
-      },
-      "codes": [
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 704.6,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 1800.59,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 1585.91,
-          "rem": "C-3"
-        },
-        {
-          "code": "C-4",
-          "status": "Abgelehnt",
-          "brutto": 284.05,
-          "rem": "C-4"
-        },
-        {
-          "code": "W-06",
-          "status": "Angenommen",
-          "brutto": 549.66,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 316.2,
-          "rem": "W-04"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 3555.92,
-          "rem": "W-04"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 236.7,
-          "rem": "W-06"
-        },
-        {
-          "code": "P-2",
-          "status": "Abgelehnt",
-          "brutto": 887.82,
-          "rem": "P-2"
-        },
-        {
-          "code": "C-9",
-          "status": "Abgelehnt",
-          "brutto": 242,
-          "rem": "C-9"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 24037.11,
-          "rem": "W-04"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 66.4,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 298.33,
-          "rem": "W-05"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 19738.23,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 236.01,
-          "rem": "W-04"
-        },
-        {
-          "code": "C-4",
-          "status": "Abgelehnt",
-          "brutto": 1073.62,
-          "rem": "C-4"
-        },
-        {
-          "code": "C-8",
-          "status": "Angenommen",
-          "brutto": 257.92,
-          "rem": "C-8"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 230.07,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 111.5,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 925.32,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 2348.47,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 2399.87,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 3544.91,
-          "rem": "C-3"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 2583.85,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 3188.32,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 282.63,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 276.66,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 264.18,
-          "rem": "W-04"
-        },
-        {
-          "code": "W-04",
-          "status": "Erfüllt",
-          "brutto": 572.55,
-          "rem": "W-04"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 285.36,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 340,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 164.26,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 107.09,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 569.18,
-          "rem": "W-05"
-        },
-        {
-          "code": "C-8",
-          "status": "Erfüllt",
-          "brutto": 3754.45,
-          "rem": "C-8"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 1586.75,
-          "rem": "C-3"
-        },
-        {
-          "code": "W-12",
-          "status": "Erfüllt",
-          "brutto": 1403.76,
-          "rem": "W-12"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 1137.32,
-          "rem": "C-8"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 1513.2,
-          "rem": "C-8"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 194,
-          "rem": "C-8"
-        },
-        {
-          "code": null,
-          "status": "Zurückgestellt",
-          "brutto": 411.2,
-          "rem": "A-Q2 / Q2"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 25.2,
-          "rem": "C-8"
-        },
-        {
-          "code": null,
-          "status": "Zurückgestellt",
-          "brutto": 700.72,
-          "rem": "A-Q1/Q2"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 4.46,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 272.12,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 60.33,
-          "rem": "W-05"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 2438.91,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 1476.96,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 269.67,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-05",
-          "status": "Angenommen",
-          "brutto": 22133.67,
-          "rem": "W-05"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 319.52,
-          "rem": "C-3"
-        },
-        {
-          "code": "W-18",
-          "status": "Zurückgestellt",
-          "brutto": 525.42,
-          "rem": "W-18"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 1766.6,
-          "rem": "W-07 SFR"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 3754.45,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 4104.55,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 325.26,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 602.31,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-06",
-          "status": "Abgelehnt",
-          "brutto": 33590.13,
-          "rem": "W-06 TLA"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 1665.36,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 1174.17,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 348.16,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 2479.4,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 242.81,
-          "rem": "W-05"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 38.54,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 332.12,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 107.7,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-10",
-          "status": "Angenommen",
-          "brutto": 1938.37,
-          "rem": "W-10"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 231.25,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 1209.87,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 2680.56,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-12",
-          "status": "Angenommen",
-          "brutto": 231.25,
-          "rem": "W-12"
-        },
-        {
-          "code": "C-6",
-          "status": "Abgelehnt",
-          "brutto": 1531.17,
-          "rem": "C-6"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 324.45,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 468.2,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 1476.43,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 231.25,
-          "rem": "C-8"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 1171.03,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 2024.24,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 5194.23,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 64.43,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 244.6,
-          "rem": "C-3"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 299.69,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 1509.85,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 106.51,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 269.77,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 682.11,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 1495.47,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 206.79,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 614.41,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-14",
-          "status": "Zurückgestellt",
-          "brutto": 480962.3,
-          "rem": "W-14 MU"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 468.2,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-14",
-          "status": "Zurückgestellt",
-          "brutto": 49506.86,
-          "rem": "W-14 MU"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 1932.46,
-          "rem": "C-3"
-        },
-        {
-          "code": "W-18",
-          "status": "Zurückgestellt",
-          "brutto": 1047.22,
-          "rem": "W-18"
-        },
-        {
-          "code": "W-18",
-          "status": "Zurückgestellt",
-          "brutto": 38175.2,
-          "rem": "W-18"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 434.8,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-14",
-          "status": "Zurückgestellt",
-          "brutto": 277984,
-          "rem": "W-14 MU"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 232.26,
-          "rem": "W-08"
-        },
-        {
-          "code": "P-1",
-          "status": "Abgelehnt",
-          "brutto": 60738.5,
-          "rem": "P-1 MPA"
-        },
-        {
-          "code": "P-1",
-          "status": "Abgelehnt",
-          "brutto": 9703.03,
-          "rem": "P-1"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 2087.76,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 370.14,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 543.47,
-          "rem": "W-08"
-        },
-        {
-          "code": "P-1",
-          "status": "Abgelehnt",
-          "brutto": 1996.83,
-          "rem": "P-1"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 2131.53,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-06",
-          "status": "Angenommen",
-          "brutto": 700.3,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 1411.38,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-08",
-          "status": "Angenommen",
-          "brutto": 8048.45,
-          "rem": "W-08 RDE"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 5349.05,
-          "rem": "C-8"
-        },
-        {
-          "code": null,
-          "status": "Angenommen",
-          "brutto": 379.85,
-          "rem": ""
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 471.68,
-          "rem": "W-08"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 214.07,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 4425.07,
-          "rem": "W-06"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 4294.61,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 331.39,
-          "rem": "W-08"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 151.5,
-          "rem": "C-8"
-        },
-        {
-          "code": null,
-          "status": "Erfüllt",
-          "brutto": 148.39,
-          "rem": "A-Q1"
-        },
-        {
-          "code": null,
-          "status": "Neu",
-          "brutto": 18115.61,
-          "rem": "W16-RDE"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 351.55,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 359.94,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 1108.24,
-          "rem": "W-08"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 83.55,
-          "rem": "W-06"
-        },
-        {
-          "code": null,
-          "status": "Neu",
-          "brutto": 4276.08,
-          "rem": "A-Q2"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 262.41,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-08",
-          "status": "Neu",
-          "brutto": 729.1,
-          "rem": "W-08 SFR"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 638.44,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 862.87,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-11",
-          "status": "Erfüllt",
-          "brutto": 10073.6,
-          "rem": "W-11"
-        },
-        {
-          "code": "W-12",
-          "status": "Erfüllt",
-          "brutto": 441.37,
-          "rem": "W-12"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 232.54,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-18",
-          "status": "Neu",
-          "brutto": 5858.07,
-          "rem": "W-18"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 1893.31,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 437.71,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 206.79,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 269.77,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 591.36,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 308.64,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 412.29,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 333.25,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-8",
-          "status": "Erfüllt",
-          "brutto": 303.83,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-18",
-          "status": "Zurückgestellt",
-          "brutto": 21388.51,
-          "rem": "W-18"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 81.97,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-05",
-          "status": "Erfüllt",
-          "brutto": 1066.24,
-          "rem": "W-05 TLA"
-        },
-        {
-          "code": "W-06",
-          "status": "Erfüllt",
-          "brutto": 986.99,
-          "rem": "W-06"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 645.09,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 1077.45,
-          "rem": "W-07"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 1069.33,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 767.6,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-14",
-          "status": "Erfüllt",
-          "brutto": 436.19,
-          "rem": "W-14 NK"
-        },
-        {
-          "code": null,
-          "status": "Neu",
-          "brutto": 2791.15,
-          "rem": "W16-RDE"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 352,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-09"
-        },
-        {
-          "code": "P-1",
-          "status": "Abgelehnt",
-          "brutto": 277.47,
-          "rem": "P-1"
-        },
-        {
-          "code": "S-2",
-          "status": "Angenommen",
-          "brutto": 2194.36,
-          "rem": "S-2"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 402.12,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 820.79,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 285.36,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 447.68,
-          "rem": "W-08"
-        },
-        {
-          "code": "C-3",
-          "status": "Abgelehnt",
-          "brutto": 468.98,
-          "rem": "C-3"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 308.07,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 348.86,
-          "rem": "W-08"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 288.93,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 113.8,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 543.09,
-          "rem": "W-07"
-        },
-        {
-          "code": "S-2",
-          "status": "Erfüllt",
-          "brutto": 2194.36,
-          "rem": "S-2"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 854.21,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 10647.83,
-          "rem": "C-8"
-        },
-        {
-          "code": "W-21",
-          "status": "Zurückgestellt",
-          "brutto": 30.95,
-          "rem": "W-21"
-        },
-        {
-          "code": "W-18",
-          "status": "Neu",
-          "brutto": 2622.64,
-          "rem": "W-18"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 55046.76,
-          "rem": "W-08 MU"
-        },
-        {
-          "code": "C-1",
-          "status": "Abgelehnt",
-          "brutto": 6610.2,
-          "rem": "C-1"
-        },
-        {
-          "code": "W-07",
-          "status": "Erfüllt",
-          "brutto": 231.25,
-          "rem": "W-07"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 1565.25,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-14",
-          "status": "Zurückgestellt",
-          "brutto": 46594.69,
-          "rem": "W-14 MU"
-        },
-        {
-          "code": "W-18",
-          "status": "Neu",
-          "brutto": 19545.99,
-          "rem": "W-18"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 8027.74,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 284.05,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-7",
-          "status": "Abgelehnt",
-          "brutto": 395.18,
-          "rem": "C-7"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 156.43,
-          "rem": "W-09"
-        },
-        {
-          "code": null,
-          "status": "Angenommen",
-          "brutto": 414,
-          "rem": ""
-        },
-        {
-          "code": "W-09",
-          "status": "Angenommen",
-          "brutto": 422.09,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 938.23,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 602.39,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-8",
-          "status": "Abgelehnt",
-          "brutto": 1012.44,
-          "rem": "C-8"
-        },
-        {
-          "code": null,
-          "status": "Angenommen",
-          "brutto": 2648.94,
-          "rem": ""
-        },
-        {
-          "code": null,
-          "status": "Neu",
-          "brutto": 2182.59,
-          "rem": "W16-RDE"
-        },
-        {
-          "code": "W-08",
-          "status": "Erfüllt",
-          "brutto": 8847.65,
-          "rem": "W-08 RDE"
-        },
-        {
-          "code": "W-20",
-          "status": "Zurückgestellt",
-          "brutto": 32831.56,
-          "rem": "W-20 RDE"
-        },
-        {
-          "code": "W-14",
-          "status": "Neu",
-          "brutto": 9400,
-          "rem": "W-14"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 468,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 432.53,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-1",
-          "status": "Abgelehnt",
-          "brutto": 518.39,
-          "rem": "C-1"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 5117.83,
-          "rem": "C-5"
-        },
-        {
-          "code": "W-13",
-          "status": "Erfüllt",
-          "brutto": 2737.89,
-          "rem": "W-13"
-        },
-        {
-          "code": "W-13",
-          "status": "Erfüllt",
-          "brutto": 4142.12,
-          "rem": "W-13"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 514.72,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 851.65,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 97.25,
-          "rem": "W-09"
-        },
-        {
-          "code": "C-5",
-          "status": "Abgelehnt",
-          "brutto": 352.69,
-          "rem": "C-5"
-        },
-        {
-          "code": "C-2",
-          "status": "Abgelehnt",
-          "brutto": 1766.11,
-          "rem": "C-2"
-        },
-        {
-          "code": "W-09",
-          "status": "Erfüllt",
-          "brutto": 99.37,
-          "rem": "W-09"
-        },
-        {
-          "code": "W-13",
-          "status": "Neu",
-          "brutto": 29877.85,
-          "rem": "W-13 SFR"
-        }
-      ],
-      "brutto": {
-        "abl": 219482.1099999999,
-        "won": 225885.62999999995,
-        "total": 1490925.4500000011,
-        "ablCount": 75,
-        "wonCount": 110
-      }
-    },
     "1": {
       "total": 224,
       "abgelehnt": 62,
@@ -1301,7 +24,7 @@
       "codes": [
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 834,
           "rem": "W-10"
         },
@@ -1319,7 +42,7 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 372.17,
           "rem": "W-10"
         },
@@ -1337,7 +60,7 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 201.94,
           "rem": "W-10"
         },
@@ -1379,19 +102,19 @@
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 851.8,
           "rem": "A-Q2"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1245.16,
           "rem": "W-08"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 14158.74,
           "rem": "W-08"
         },
@@ -1409,31 +132,31 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1169,
           "rem": "W-10"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 563.54,
           "rem": "W-08"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 596.26,
           "rem": "W-08"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 707.1,
           "rem": "W-10"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 793.56,
           "rem": "W-10"
         },
@@ -1457,7 +180,7 @@
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 338.22,
           "rem": "W-08"
         },
@@ -1481,31 +204,31 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2677.48,
           "rem": "W-10"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 332.12,
           "rem": "W-08"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 222.17,
           "rem": "W-10"
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 4075,
           "rem": "W-11"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 281.67,
           "rem": "W-10"
         },
@@ -1517,7 +240,7 @@
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 297.3,
           "rem": "W-08"
         },
@@ -1529,7 +252,7 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 737.63,
           "rem": "W-09"
         },
@@ -1547,13 +270,13 @@
         },
         {
           "code": "W-07",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 9684.7,
           "rem": "W-07 TLA"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 245.32,
           "rem": ""
         },
@@ -1577,7 +300,7 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 731.73,
           "rem": "W-11"
         },
@@ -1601,7 +324,7 @@
         },
         {
           "code": "W-19",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 8571.57,
           "rem": "W-19 TLA"
         },
@@ -1625,25 +348,25 @@
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1075.7,
           "rem": "W-08"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 496.4,
           "rem": "W10 RDE"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 8820.68,
           "rem": "W-08 MU"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 455.06,
           "rem": "W-08"
         },
@@ -1655,25 +378,25 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 213.9,
           "rem": "W-12"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 141.07,
           "rem": "W-08"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 372.17,
           "rem": "W-12"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1661.82,
           "rem": "W-08"
         },
@@ -1691,13 +414,13 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1650.9,
           "rem": "W-12"
         },
         {
           "code": "W-08",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1136.19,
           "rem": "W-08 MU"
         },
@@ -1709,7 +432,7 @@
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 7735,
           "rem": "W09-RDE"
         },
@@ -1721,7 +444,7 @@
         },
         {
           "code": "S-2",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 777.9,
           "rem": "S-2"
         },
@@ -1739,25 +462,25 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 482.56,
           "rem": "W-09"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1598.71,
           "rem": "W-12"
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 352.69,
           "rem": "W-11"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 26193.6,
           "rem": "W-12"
         },
@@ -1769,19 +492,19 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1645,
           "rem": "W-09"
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1268.84,
           "rem": "W-11"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3800.38,
           "rem": "W-12"
         },
@@ -1793,7 +516,7 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1077.78,
           "rem": "W-11"
         },
@@ -1805,7 +528,7 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3201.21,
           "rem": "W-12"
         },
@@ -1817,7 +540,7 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 523.71,
           "rem": "W-09"
         },
@@ -1847,19 +570,19 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1650.86,
           "rem": "W-11"
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1495.47,
           "rem": "W-09"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 343.1,
           "rem": "W-13"
         },
@@ -1883,7 +606,7 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 424.31,
           "rem": "W-09"
         },
@@ -1895,7 +618,7 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 669.59,
           "rem": "W-12"
         },
@@ -1907,7 +630,7 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2857.77,
           "rem": "W-11"
         },
@@ -1919,25 +642,25 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 126,
           "rem": "W-09"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 494.36,
           "rem": "W-12"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 329.15,
           "rem": "W-10"
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 590.48,
           "rem": "W-09"
         },
@@ -1949,7 +672,7 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2050.69,
           "rem": "W-12"
         },
@@ -1967,7 +690,7 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 468.98,
           "rem": "W-11"
         },
@@ -1979,7 +702,7 @@
         },
         {
           "code": "W-17",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 451188.45,
           "rem": "W-17 MU"
         },
@@ -2009,7 +732,7 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1752.4,
           "rem": "W-09"
         },
@@ -2021,13 +744,13 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 165.77,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 220.52,
           "rem": "W-12"
         },
@@ -2057,19 +780,19 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 343.85,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 124.59,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 628.2,
           "rem": "W-12"
         },
@@ -2087,43 +810,43 @@
         },
         {
           "code": "W-19",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 197.52,
           "rem": "W-19"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1618.35,
           "rem": "W-13"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 164.26,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 436.19,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1723.66,
           "rem": "W-12"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 293.62,
           "rem": "W-13"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 199.8,
           "rem": "W-12"
         },
@@ -2141,25 +864,25 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 111.5,
           "rem": "W-12"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 324.45,
           "rem": ""
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 239.15,
           "rem": ""
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1077.78,
           "rem": "W-12"
         },
@@ -2183,25 +906,25 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 230.07,
           "rem": "W-12"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 4933.74,
           "rem": "W12-RDE"
         },
         {
           "code": null,
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 3317.72,
           "rem": "W23-RDE"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1038.3,
           "rem": "W-12"
         },
@@ -2225,13 +948,13 @@
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 40712.65,
           "rem": "W-09 PJO"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 128.16,
           "rem": "W-12"
         },
@@ -2249,7 +972,7 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 945.25,
           "rem": "W-10"
         },
@@ -2261,13 +984,13 @@
         },
         {
           "code": "P-1",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2398.55,
           "rem": "P-1"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 85.29,
           "rem": "W-12"
         },
@@ -2285,7 +1008,7 @@
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 986.99,
           "rem": "W-10"
         },
@@ -2297,13 +1020,13 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2190.9,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 281.46,
           "rem": "W-12"
         },
@@ -2315,61 +1038,61 @@
         },
         {
           "code": "S-2",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1123.36,
           "rem": "S-2"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 24.55,
           "rem": "W-12"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2867.15,
           "rem": "W-10"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1223.8,
           "rem": "W12-RDE"
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 5621.35,
           "rem": "W-09 PJO"
         },
         {
           "code": "W-09",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 968.09,
           "rem": "W-09"
         },
         {
           "code": "W-10",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 716.67,
           "rem": "W-10"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 696.85,
           "rem": "W-12"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 102.58,
           "rem": "W-12"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2322.11,
           "rem": "W-13 PJO"
         },
@@ -2393,13 +1116,13 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 218.97,
           "rem": "W-12"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-15"
         },
@@ -2411,7 +1134,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 820,
           "rem": "W-13"
         },
@@ -2423,7 +1146,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 715.59,
           "rem": "W-13"
         },
@@ -2435,7 +1158,7 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 478.02,
           "rem": "W-12"
         },
@@ -2453,7 +1176,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 277.62,
           "rem": "W-14"
         },
@@ -2483,31 +1206,31 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 70.5,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 277.62,
           "rem": "W-13"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 128.16,
           "rem": "W-15"
         },
         {
           "code": "W-19",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 124.13,
           "rem": "W-19"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2634.5,
           "rem": "W-12"
         },
@@ -2519,13 +1242,13 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1294.36,
           "rem": "W-14"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 673.18,
           "rem": "W-13"
         },
@@ -2537,13 +1260,13 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 268.75,
           "rem": "W-11"
         },
         {
           "code": "W-20",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 99.37,
           "rem": "W-20"
         },
@@ -2585,13 +1308,13 @@
         },
         {
           "code": null,
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 2937.81,
           "rem": "A-Q3"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1530.48,
           "rem": "W-13"
         },
@@ -2609,7 +1332,7 @@
         },
         {
           "code": "W-11",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 105.86,
           "rem": "W-11"
         },
@@ -2627,7 +1350,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2011.09,
           "rem": "W-13"
         },
@@ -2686,7 +1409,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1474.6,
           "rem": "W-13"
         },
@@ -2704,19 +1427,19 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 201.94,
           "rem": "W-14"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 478.32,
           "rem": "W-12"
         },
         {
           "code": "P-1",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 494.68,
           "rem": "P-1"
         },
@@ -2728,7 +1451,7 @@
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 459.97,
           "rem": "W-12"
         },
@@ -2740,7 +1463,7 @@
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 305.83,
           "rem": "W15 RDE"
         },
@@ -2776,7 +1499,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3391.5,
           "rem": "W-13"
         },
@@ -2788,7 +1511,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 232.26,
           "rem": "W-13"
         },
@@ -2806,7 +1529,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-13"
         },
@@ -2824,7 +1547,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 106.51,
           "rem": "W-14"
         },
@@ -2836,7 +1559,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1021.6,
           "rem": "W-14"
         },
@@ -2860,25 +1583,25 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 709.93,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 990.91,
           "rem": "W-13"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 704.6,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 973.54,
           "rem": "W-14"
         },
@@ -2890,7 +1613,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1800,
           "rem": "W-14"
         },
@@ -2908,7 +1631,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 319.52,
           "rem": "W-14"
         },
@@ -2920,13 +1643,13 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2249.27,
           "rem": "W-14"
         },
         {
           "code": "W-12",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 267.2,
           "rem": "W-12"
         },
@@ -2968,7 +1691,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 464.2,
           "rem": "W-14"
         },
@@ -2998,13 +1721,13 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 267.58,
           "rem": "W-13"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2255.7,
           "rem": "W-15"
         },
@@ -3016,19 +1739,19 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 312.79,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 284.1,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 563.54,
           "rem": "W-13"
         },
@@ -3040,7 +1763,7 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 569.19,
           "rem": "W-13"
         },
@@ -3064,19 +1787,19 @@
         },
         {
           "code": "W-20",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 14090,
           "rem": "W-20"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 84.61,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 352.69,
           "rem": "W-14"
         },
@@ -3118,43 +1841,43 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 447.2,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 755.67,
           "rem": "W-13"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 306.97,
           "rem": "W-15"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 94.33,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 394.91,
           "rem": "W-13"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 173.5,
           "rem": "W-13"
         },
@@ -3166,7 +1889,7 @@
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1305.97,
           "rem": "A- Q1"
         },
@@ -3178,19 +1901,19 @@
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 353.55,
           "rem": "W-13"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 57.66,
           "rem": "W-14"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 683.3,
           "rem": "W-13"
         },
@@ -3202,13 +1925,13 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 5307.76,
           "rem": "W-14"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 7164.07,
           "rem": "W-13"
         },
@@ -3232,7 +1955,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 4330.14,
           "rem": "W-15"
         },
@@ -3274,13 +1997,13 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2089.62,
           "rem": "W-14"
         },
         {
           "code": "W-24",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 550.04,
           "rem": "W-24"
         },
@@ -3310,7 +2033,7 @@
         },
         {
           "code": "W-20",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 1674.21,
           "rem": "W-20"
         },
@@ -3322,13 +2045,13 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 164.26,
           "rem": "W-16"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 332.12,
           "rem": "W-14"
         },
@@ -3364,25 +2087,25 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 762.9,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 185.59,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 63.28,
           "rem": "W-14"
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1502.47,
           "rem": "W-16"
         },
@@ -3406,13 +2129,13 @@
         },
         {
           "code": "W-19",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 42010.67,
           "rem": "W-19 TLA"
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1477.34,
           "rem": "W-16"
         },
@@ -3430,43 +2153,43 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 306.2,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 75.57,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 239.15,
           "rem": "W-14"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 926.9,
           "rem": "W-14"
         },
         {
           "code": "W-13",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 436.97,
           "rem": "W-13"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 285.24,
           "rem": "W-14"
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2387.32,
           "rem": "W-16"
         },
@@ -3514,13 +2237,13 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1504.52,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 165.77,
           "rem": "W-15"
         },
@@ -3532,19 +2255,19 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 239.79,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 410.72,
           "rem": "W-15"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 789.21,
           "rem": "W-17"
         },
@@ -3556,7 +2279,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 232.26,
           "rem": "W-15"
         },
@@ -3568,7 +2291,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 344.73,
           "rem": "W-15"
         },
@@ -3580,37 +2303,37 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3193.6,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 434.8,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 648.4,
           "rem": "W-15"
         },
         {
           "code": "W-26",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 1490.15,
           "rem": "W-26"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 203.93,
           "rem": "W16-RDE"
         },
         {
           "code": null,
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1064.75,
           "rem": "W15-RDE"
         },
@@ -3628,7 +2351,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 548.41,
           "rem": "W-15"
         },
@@ -3640,7 +2363,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 93.18,
           "rem": "W-15"
         },
@@ -3652,7 +2375,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-17"
         },
@@ -3664,13 +2387,13 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3142.49,
           "rem": "W-14 TLA"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 412.29,
           "rem": "W-15"
         },
@@ -3682,25 +2405,25 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 538,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 759.81,
           "rem": "W-15"
         },
         {
           "code": "W-24",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 886.82,
           "rem": "W-24"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3471.37,
           "rem": "W-17"
         },
@@ -3724,7 +2447,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 4877.62,
           "rem": "W-17 NK"
         },
@@ -3736,7 +2459,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 232.3,
           "rem": "W-17 / P-1"
         },
@@ -3748,13 +2471,13 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 256.47,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3498.05,
           "rem": "W-15"
         },
@@ -3778,25 +2501,25 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 131.55,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3297.79,
           "rem": "W-15"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 107.06,
           "rem": "W-15"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2356.26,
           "rem": "W-17"
         },
@@ -3820,25 +2543,25 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 6624.37,
           "rem": "W-14 PJO"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 777.9,
           "rem": "W-17"
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 812.7,
           "rem": "W-15"
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3142.49,
           "rem": "W-14 TLA"
         },
@@ -3856,7 +2579,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 333.81,
           "rem": "W-15"
         },
@@ -3874,13 +2597,13 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 553,
           "rem": "W-16"
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 348.16,
           "rem": "W-18"
         },
@@ -3892,7 +2615,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 180.52,
           "rem": "W-18"
         },
@@ -3916,7 +2639,7 @@
         },
         {
           "code": "W-14",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 4597.45,
           "rem": "W-14 MPA"
         },
@@ -3928,7 +2651,7 @@
         },
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 434.8,
           "rem": "W-15"
         },
@@ -3952,7 +2675,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 865.17,
           "rem": "W-16"
         },
@@ -3982,7 +2705,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 137.81,
           "rem": "W-16"
         },
@@ -3994,7 +2717,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 478.32,
           "rem": "W-16"
         },
@@ -4024,13 +2747,13 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 746.49,
           "rem": "W-18"
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 126,
           "rem": "W-18 / P-1"
         },
@@ -4042,13 +2765,13 @@
         },
         {
           "code": "W-27",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 11778.03,
           "rem": "W-27"
         },
         {
           "code": "W-20",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 7747.83,
           "rem": "W-20 TLA"
         }
@@ -4089,7 +2812,7 @@
       "codes": [
         {
           "code": "W-15",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 11606.33,
           "rem": "W-15"
         },
@@ -4101,13 +2824,13 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 463.72,
           "rem": "W-16"
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 331.89,
           "rem": "W-16"
         },
@@ -4125,13 +2848,13 @@
         },
         {
           "code": "W-20",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 4428.34,
           "rem": "W-20 TLA"
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 289.98,
           "rem": "W-16"
         },
@@ -4149,7 +2872,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 961.66,
           "rem": "W-16"
         },
@@ -4161,7 +2884,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 275.34,
           "rem": "W-16"
         },
@@ -4185,7 +2908,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 359.94,
           "rem": "W-16"
         },
@@ -4197,13 +2920,13 @@
         },
         {
           "code": "W-19",
-          "status": "Zurückgestellt",
+          "status": "ZurÃ¼ckgestellt",
           "brutto": 39004.93,
           "rem": "W-19 TLA"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 316.2,
           "rem": "W-17"
         },
@@ -4221,7 +2944,7 @@
         },
         {
           "code": "W-19",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1094.85,
           "rem": "W-19"
         },
@@ -4245,7 +2968,7 @@
         },
         {
           "code": "W-19",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-19"
         },
@@ -4275,7 +2998,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 510.08,
           "rem": "W-17"
         },
@@ -4299,7 +3022,7 @@
         },
         {
           "code": "W-16",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 672.09,
           "rem": "W-16"
         },
@@ -4311,7 +3034,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 469.6,
           "rem": "W-17"
         },
@@ -4323,19 +3046,19 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 199.63,
           "rem": "W-17"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 444.73,
           "rem": "W-17"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 231.25,
           "rem": "W-17"
         },
@@ -4365,7 +3088,7 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 211.65,
           "rem": "W-17"
         },
@@ -4389,13 +3112,13 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1476.43,
           "rem": "W-17"
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-18"
         },
@@ -4407,7 +3130,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 421.55,
           "rem": "W-18"
         },
@@ -4425,7 +3148,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2355.75,
           "rem": "W-18"
         },
@@ -4449,25 +3172,25 @@
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 279.25,
           "rem": "W-17"
         },
         {
           "code": "W-20",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 429.53,
           "rem": "W-20"
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 596.19,
           "rem": "W-18"
         },
         {
           "code": "W-20",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 436.19,
           "rem": "W-20"
         },
@@ -4497,7 +3220,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 3380.33,
           "rem": "W-18"
         },
@@ -4515,7 +3238,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 875.78,
           "rem": "W-18"
         },
@@ -4533,7 +3256,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 2029.82,
           "rem": "W-18"
         },
@@ -4623,7 +3346,7 @@
         },
         {
           "code": "W-20",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 543.09,
           "rem": "W-20"
         },
@@ -4683,7 +3406,7 @@
         },
         {
           "code": "W-20",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1314.06,
           "rem": "W-20"
         },
@@ -4695,7 +3418,7 @@
         },
         {
           "code": "W-18",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 244.43,
           "rem": "W-18"
         },
@@ -4767,7 +3490,7 @@
         },
         {
           "code": "W-19",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1870.32,
           "rem": "W-19"
         },
@@ -4779,13 +3502,13 @@
         },
         {
           "code": "W-31",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 1391.04,
           "rem": "W-31"
         },
         {
           "code": "W-17",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 579.18,
           "rem": "W-17"
         },
@@ -4875,7 +3598,7 @@
         },
         {
           "code": "W-20",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 775.82,
           "rem": "W-20"
         },
@@ -4899,7 +3622,7 @@
         },
         {
           "code": "P-1",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 62.05,
           "rem": "P-1"
         },
@@ -4929,7 +3652,7 @@
         },
         {
           "code": "W-22",
-          "status": "Erfüllt",
+          "status": "ErfÃ¼llt",
           "brutto": 81.92,
           "rem": "W-22"
         },
@@ -5066,15 +3789,15 @@
     },
     "C-4": {
       "type": "C",
-      "desc": "Produkt nicht fÃÂÃÂ¼r die Zwecke geeignet"
+      "desc": "Produkt nicht fÃÂÃÂÃÂÃÂ¼r die Zwecke geeignet"
     },
     "C-5": {
       "type": "C",
-      "desc": "GeschÃÂÃÂ¤ft wurde nicht realisiert (GrÃÂÃÂ¼nde: Kunde hat kein Interesse mehr / keine RÃÂÃÂ¼ckmeldung etc.)"
+      "desc": "GeschÃÂÃÂÃÂÃÂ¤ft wurde nicht realisiert (GrÃÂÃÂÃÂÃÂ¼nde: Kunde hat kein Interesse mehr / keine RÃÂÃÂÃÂÃÂ¼ckmeldung etc.)"
     },
     "C-6": {
       "type": "C",
-      "desc": "Kunde hat sich fÃÂÃÂ¼r den Wettbewerber entschieden"
+      "desc": "Kunde hat sich fÃÂÃÂÃÂÃÂ¼r den Wettbewerber entschieden"
     },
     "C-7": {
       "type": "C",
@@ -5082,7 +3805,7 @@
     },
     "C-8": {
       "type": "C",
-      "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum ÃÂÃÂ¼bersteigt die AngebotsgÃÂÃÂ¼ltigkeit enorm)"
+      "desc": "Projekt noch ausstehend, Angebot dennoch geschlossen (Projektzeitraum ÃÂÃÂÃÂÃÂ¼bersteigt die AngebotsgÃÂÃÂÃÂÃÂ¼ltigkeit enorm)"
     },
     "C-9": {
       "type": "C",
@@ -5107,5 +3830,5 @@
     }
   ],
   "threshold": 5000,
-  "updated": "2026-04-27T14:03:38.596Z"
+  "updated": "2026-05-13T06:34:49.640Z"
 }
